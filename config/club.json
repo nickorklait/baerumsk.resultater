@@ -1,0 +1,77 @@
+{
+  "club": {
+    "name": "Bærum SK",
+    "shortName": "Bærum SK",
+    "fiksId": 89,
+    "teamPrefix": "Bærum",
+    "logoUrl": "http://logo.fotballdata.no/logos/89.jpg?w=400",
+    "hashtags": [
+      "#bærumsk",
+      "#bsk",
+      "#sandvika"
+    ]
+  },
+  "brand": {
+    "profile": "neutral",
+    "name": "Bærum SK Fotball",
+    "tagline": "Resultater & kamper",
+    "hashtags": [
+      "#bærumsk",
+      "#bærumfotball",
+      "#sandvika"
+    ],
+    "sourceLine": "Resultater fra fotball.no · Uoffisiell side"
+  },
+  "colors": {
+    "auto": false,
+    "primary": "#1b1b1b",
+    "secondary": "#f5c400",
+    "accent": "#f5c400"
+  },
+  "data": {
+    "adapter": "calendarFeed",
+    "userAgent": "BaerumSK-SoMe-POC/0.1 (contact: nick.rios.haugen@orkla.no)",
+    "minHoursBetweenFetches": 2.5,
+    "tournamentIds": []
+  },
+  "sponsors": {
+    "file": "sponsors.placeholder.json"
+  },
+  "posts": {
+    "resultsWindow": {
+      "from": "fri",
+      "to": "sun"
+    },
+    "minResultAge": 13,
+    "includeChildrenInFixtures": false,
+    "matchDayTeams": [
+      "Bærum Menn Senior A"
+    ]
+  },
+  "publish": {
+    "enabled": true,
+    "instagram": {
+      "apiVersion": "v26.0",
+      "stories": true
+    },
+    "imageBaseUrl": null,
+    "schedule": {
+      "results": {
+        "daysAfterWindow": 1,
+        "time": "10:00"
+      },
+      "fixtures": {
+        "daysAfterWindow": 1,
+        "time": "12:00"
+      },
+      "perResult": {
+        "enabled": true,
+        "since": "2026-10-30",
+        "expiresAfterHours": 72
+      },
+      "matchDay": {
+        "time": "08:00"
+      }
+    }
+  }
+}

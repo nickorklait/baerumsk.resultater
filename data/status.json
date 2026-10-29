@@ -1,0 +1,22 @@
+{
+  "fetch": {
+    "at": "2026-10-29T17:02:46.911Z",
+    "reports": [
+      {
+        "source": "club-89",
+        "status": "fetched",
+        "detail": "21 events -> club-89_20261029T170246Z.ics"
+      }
+    ]
+  },
+  "generate": {
+    "at": "2026-10-29T17:03:42.806Z",
+    "weeks": [
+      {
+        "key": "2026-11-01",
+        "posts": 2,
+        "images": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,1192 @@
+BEGIN:VCALENDAR
+PRODID:-//github.com/ical-org/ical.net//NONSGML ical.net 4.0//EN
+VERSION:2.0
+X-WR-CALNAME:Alle kamper i Haslum 2
+BEGIN:VEVENT
+DESCRIPTION:G13 2. div. høst avd. 01 (runde 8)\n\nKFUM G13-2 - Haslum G13-
+ 2\nEkeberg  kunstgress 9er A søndag 18.10.26 17:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261018T181900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261018T170000
+LOCATION:Ekeberg  kunstgress 9er A
+SEQUENCE:0
+SUMMARY:KFUM G13-2 - Haslum G13-2 2 - 9
+UID:7c76e0c9-d87e-4b82-8a08-6ee3710db110
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:8. div. menn avd. 02 (runde 18)\n\nKorsvoll Menn Senior C - Ha
+ slum Menn 2\nKorsvoll kunstgress søndag 18.10.26 19:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261018T203900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261018T190000
+LOCATION:Korsvoll kunstgress
+SEQUENCE:0
+SUMMARY:Korsvoll Menn Senior C - Haslum Menn 2 2 - 7
+UID:98b1b825-3356-4aff-82a9-95f61b157389
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G15 1. div. B avd. 02  (runde 21)\n\nHaslum G15-1 - Holmlia  G
+ 15-1\nHaslum kunstgress 2 søndag 18.10.26 20:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261018T212900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261018T200000
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum G15-1 - Holmlia  G15-1 2 - 1
+UID:2de5b617-4022-4435-9324-f4637be3a73b
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 05 (runde 18)\n\nHaslum G9 2 - Frisk Asker G9 2\nH
+ aslum kunstgress 5er B mandag 19.10.26 17:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261019T182900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261019T173000
+LOCATION:Haslum kunstgress 5er B
+SEQUENCE:0
+SUMMARY:Haslum G9 2 - Frisk Asker G9 2 -
+UID:587f651a-8935-4e78-b263-5374bd5763e6
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 10 (runde 18)\n\nHøvik G9 United - Haslum G9 7\nRa
+ mstad skole kunstgress 5er A mandag 19.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261019T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261019T183000
+LOCATION:Ramstad skole kunstgress 5er A
+SEQUENCE:0
+SUMMARY:Høvik G9 United - Haslum G9 7 -
+UID:f5752d01-486f-4833-83ad-6a93842bb21d
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G10 år 7er avd. 01 (runde 18)\n\nHaslum G10 6 - Stabæk  G10 2\
+ nHaslum kunstgress 7er D mandag 19.10.26 19:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261019T200900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261019T190000
+LOCATION:Haslum kunstgress 7er D
+SEQUENCE:0
+SUMMARY:Haslum G10 6 - Stabæk  G10 2 -
+UID:62f1957d-7263-4e2f-9b94-da0d02965d65
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G11 år avd. 07 (runde 18)\n\nLommedalen G11 FK - Haslum G11 3\
+ nLommedalen kg øvre 7er B mandag 19.10.26 19:05\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261019T201400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261019T190500
+LOCATION:Lommedalen kg øvre 7er B
+SEQUENCE:0
+SUMMARY:Lommedalen G11 FK - Haslum G11 3 -
+UID:17aa7cb2-5681-40f7-93ce-439f4c2876bc
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G11 år avd. 07 (runde 18)\n\nHaslum G11 7 - Stabæk  G11 3\nHas
+ lum kunstgress 7er C mandag 19.10.26 19:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261019T201900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261019T191000
+LOCATION:Haslum kunstgress 7er C
+SEQUENCE:0
+SUMMARY:Haslum G11 7 - Stabæk  G11 3 -
+UID:4d69b15e-663c-447e-961c-0d88c6ffd8e4
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G12 år 9er 3. div. avd. 02 (runde 18)\n\nHaslum G12 3 - Høvik 
+ G12 Gul\nHaslum kunstgress 9er A mandag 19.10.26 19:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261019T202900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261019T191000
+LOCATION:Haslum kunstgress 9er A
+SEQUENCE:0
+SUMMARY:Haslum G12 3 - Høvik G12 Gul -
+UID:2f6bf471-f561-4731-9661-30c80a1a9d98
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G19 4. div. (runde 24)\n\nHaslum G19-3 - Bærum G19-3\nHaslum k
+ unstgress 2 mandag 19.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261019T215400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261019T201500
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum G19-3 - Bærum G19-3 2 - 2
+UID:c0394160-6849-4a65-97db-c61ba5442416
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G16 4. div.  avd. 01 (runde 20)\n\nHaslum G16-2 - Stabæk G16-4
+ \nHaslum kunstgress mandag 19.10.26 20:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261019T215900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261019T203000
+LOCATION:Haslum kunstgress
+SEQUENCE:0
+SUMMARY:Haslum G16-2 - Stabæk G16-4 10 - 2
+UID:f0c1f63a-6e25-4853-b982-c59e1cf62c92
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J08 år avd. 03 (runde 18)\n\nHaslum J8 2 - Jardar J8 3\nHaslum
+  kunstgress 5er C tirsdag 20.10.26 17:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T175900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T170000
+LOCATION:Haslum kunstgress 5er C
+SEQUENCE:0
+SUMMARY:Haslum J8 2 - Jardar J8 3 -
+UID:a6ab272a-f22f-49bd-a252-7f97b1d64e11
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J08 år avd. 04 (runde 18)\n\nJardar J8 2 - Haslum J8 1\nBjørne
+ gård kunstg. 5er B tirsdag 20.10.26 17:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T175900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T170000
+LOCATION:Bjørnegård kunstg. 5er B
+SEQUENCE:0
+SUMMARY:Jardar J8 2 - Haslum J8 1 -
+UID:cff45144-bb43-4111-be2f-9c4f8b3035df
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G11 år avd. 06 (runde 18)\n\nHaslum G11 6 - Lommedalen G11 FC\
+ nHaslum kunstgress 7er A tirsdag 20.10.26 18:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T190900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T180000
+LOCATION:Haslum kunstgress 7er A
+SEQUENCE:0
+SUMMARY:Haslum G11 6 - Lommedalen G11 FC -
+UID:67aec795-0cac-404b-85d7-f9ba16333b8a
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 04 (runde 18)\n\nFrisk Asker G9 1 - Haslum G9 11\n
+ Frisk Arena 5er A tirsdag 20.10.26 18:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T185900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T180000
+LOCATION:Frisk Arena 5er A
+SEQUENCE:0
+SUMMARY:Frisk Asker G9 1 - Haslum G9 11 -
+UID:b6f0263b-42f0-46e1-bef5-726cdf6ac9ae
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G08 år avd. 08 (runde 18)\n\nHøvik G8 Hvit - Haslum G8 2\nRams
+ tad skole kunstgress 5er A tirsdag 20.10.26 18:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T185900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T180000
+LOCATION:Ramstad skole kunstgress 5er A
+SEQUENCE:0
+SUMMARY:Høvik G8 Hvit - Haslum G8 2 -
+UID:3e363c65-797f-44c7-8c7e-d5cd7c836bc8
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G10 år 7er avd. 08 (runde 18)\n\nHaslum G10 8 - BVH G10 BrynHB
+ 2\nHaslum kunstgress 7er B tirsdag 20.10.26 18:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T190900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T180000
+LOCATION:Haslum kunstgress 7er B
+SEQUENCE:0
+SUMMARY:Haslum G10 8 - BVH G10 BrynHB2 -
+UID:1a45c468-a1b5-4d1f-92d0-939d43b7047d
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J17 3. div. avd. 01 (runde 20)\n\nHaslum J17-1 - Høvik J17-2\n
+ Haslum kunstgress 2 tirsdag 20.10.26 18:45\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T201400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T184500
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum J17-1 - Høvik J17-2 -
+UID:463055a9-6b03-4af0-ac42-c23c19c1142a
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G15 3. div. avd. 01 (runde 18)\n\nSnarøya  G15-2 - Haslum G15-
+ 2\nHundsund kgb 1 tirsdag 20.10.26 19:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T202900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T190000
+LOCATION:Hundsund kgb 1
+SEQUENCE:0
+SUMMARY:Snarøya  G15-2 - Haslum G15-2 -
+UID:063df168-c6a1-480c-b909-db5aeda276a2
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G10 år 7er avd. 23 (runde 18)\n\nDikemark G10 Rangers - Haslum
+  G10 3\nDikemark kunstgress 7er A tirsdag 20.10.26 19:00\n\nwww.fotball.n
+ o
+DTEND;TZID=Europe/Oslo:20261020T200900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T190000
+LOCATION:Dikemark kunstgress 7er A
+SEQUENCE:0
+SUMMARY:Dikemark G10 Rangers - Haslum G10 3 -
+UID:88654cda-9411-4a46-997d-77b0c56299b3
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G10 år 7er avd. 06 (runde 18)\n\nLommedalen G10 Svart - Haslum
+  G10 2\nLommedalen kg øvre 7er B tirsdag 20.10.26 19:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T200900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T190000
+LOCATION:Lommedalen kg øvre 7er B
+SEQUENCE:0
+SUMMARY:Lommedalen G10 Svart - Haslum G10 2 -
+UID:c7435628-7c32-4923-9eef-8d39c12f8c87
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G10 år 7er avd. 07 (runde 18)\n\nStabæk  G10 3 - Haslum G10 7\
+ nFrem kgb 7er A tirsdag 20.10.26 19:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T200900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T190000
+LOCATION:Frem kgb 7er A
+SEQUENCE:0
+SUMMARY:Stabæk  G10 3 - Haslum G10 7 -
+UID:e018357a-336b-4b33-b60b-906ea0a35cdf
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J11 år avd. 05 (runde 18)\n\nHaslum J11 3 - Øvrevoll Hosle J11
+  Grønn\nHaslum kunstgress 7er C tirsdag 20.10.26 19:05\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T201400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T190500
+LOCATION:Haslum kunstgress 7er C
+SEQUENCE:0
+SUMMARY:Haslum J11 3 - Øvrevoll Hosle J11 Grønn -
+UID:e5c92f15-6fab-47c9-92a5-1420a14a95bf
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G11 år avd. 21 (runde 18)\n\nHaslum G11 5 - Ready G11 Blå\nHas
+ lum kunstgress 7er D tirsdag 20.10.26 19:05\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T201400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T190500
+LOCATION:Haslum kunstgress 7er D
+SEQUENCE:0
+SUMMARY:Haslum G11 5 - Ready G11 Blå -
+UID:310fcc31-dc7b-4eff-8f7d-0da9e933cc68
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G11 år avd. 05 (runde 18)\n\nHaslum G11 2 - Øvrevoll Hosle G11
+  Grav 1\nHaslum kunstgress 7er B tirsdag 20.10.26 19:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T201900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T191000
+LOCATION:Haslum kunstgress 7er B
+SEQUENCE:0
+SUMMARY:Haslum G11 2 - Øvrevoll Hosle G11 Grav 1 -
+UID:71aacf64-af1e-4e6d-b73d-cffa4748e94d
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G11 år avd. 01 (runde 25)\n\nHaslum G11 1 - Vestre Aker G11 Bl
+ å\nHaslum kunstgress 7er A tirsdag 20.10.26 19:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T201900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T191000
+LOCATION:Haslum kunstgress 7er A
+SEQUENCE:0
+SUMMARY:Haslum G11 1 - Vestre Aker G11 Blå -
+UID:f9998043-6210-4974-bf72-889c76d3dc33
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G11 år avd. 21 (runde 18)\n\nUllern G11 Monsters - Haslum G11 
+ 4\nHullebergmyra kunstgress 7er tirsdag 20.10.26 19:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T201900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T191000
+LOCATION:Hullebergmyra kunstgress 7er
+SEQUENCE:0
+SUMMARY:Ullern G11 Monsters - Haslum G11 4 -
+UID:4cc6cc7f-fad8-414b-bfdc-42a5834a6308
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G13 4. div. avd. 02 (runde 18)\n\nHaslum G13-3 - Kjelsås G13-4
+ \nHaslum kunstgress 9er B tirsdag 20.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T213400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T201500
+LOCATION:Haslum kunstgress 9er B
+SEQUENCE:0
+SUMMARY:Haslum G13-3 - Kjelsås G13-4 -
+UID:690fa934-d72f-4b1b-8727-b76426182dc8
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:4. div. menn avd. 01 (runde 21)\n\nHaslum Menn 1 - Årvoll Menn
+  Senior A\nHaslum kunstgress 2 tirsdag 20.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T215400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T201500
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum Menn 1 - Årvoll Menn Senior A -
+UID:48efee81-c661-415e-b453-e368c6614e35
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G13 4. div. avd. 01 (runde 18)\n\nLommedalen G13-3 - Haslum G1
+ 3-4\nLommedalen kg nedre 9er B tirsdag 20.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T213400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T201500
+LOCATION:Lommedalen kg nedre 9er B
+SEQUENCE:0
+SUMMARY:Lommedalen G13-3 - Haslum G13-4 -
+UID:5bbc779c-489b-46eb-a7ee-24fee4edc362
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:M55 (runde 18)\n\nPress  55 - Haslum  M 55\nFuruset kunstgr. 7
+ er A tirsdag 20.10.26 21:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261020T220900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261020T210000
+LOCATION:Furuset kunstgr. 7er A
+SEQUENCE:0
+SUMMARY:Press  55 - Haslum  M 55 -
+UID:6976ca30-deb9-4e4c-a1f5-f271c0ae5619
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J08 år avd. 05 (runde 18)\n\nHaslum J8 3 - Frem-31  J8 Gaupene
+ \nHaslum kunstgress 5er B onsdag 21.10.26 17:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261021T182900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T173000
+LOCATION:Haslum kunstgress 5er B
+SEQUENCE:0
+SUMMARY:Haslum J8 3 - Frem-31  J8 Gaupene -
+UID:96ce1a77-9f69-45ce-8e32-3f0bf5e3d9cf
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G08 år avd. 08 (runde 15)\n\nHaslum G8 2 - Fossum G8 Fighterne
+ \nHaslum kunstgress 5er A onsdag 21.10.26 17:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261021T182900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T173000
+LOCATION:Haslum kunstgress 5er A
+SEQUENCE:0
+SUMMARY:Haslum G8 2 - Fossum G8 Fighterne -
+UID:7d19cd40-b18a-4795-b043-21e504d40f15
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G10 år 7er avd. 05 (runde 18)\n\nHaslum G10 4 - Lommedalen G10
+  Lions\nHaslum kunstgress 7er D onsdag 21.10.26 17:45\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261021T185400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T174500
+LOCATION:Haslum kunstgress 7er D
+SEQUENCE:0
+SUMMARY:Haslum G10 4 - Lommedalen G10 Lions -
+UID:fc9112aa-3aa9-49c6-a448-abdc7f073ed5
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 02 (runde 21)\n\nSkeid G9 Løve - Haslum G9 8\nNord
+ re Åsen 2 kg 5er B onsdag 21.10.26 18:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261021T190900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T181000
+LOCATION:Nordre Åsen 2 kg 5er B
+SEQUENCE:0
+SUMMARY:Skeid G9 Løve - Haslum G9 8 -
+UID:ec0565b8-a668-4fb3-a512-6026cec2e170
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J10 år 7er avd. 01 (runde 21)\n\nBærum J10 1 - Haslum J10 2\nS
+ andvika 7er kunstgr. onsdag 21.10.26 19:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261021T200900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T190000
+LOCATION:Sandvika 7er kunstgr.
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Haslum J10 2 -
+UID:f2c30376-3641-40b9-9e6b-51ac563b88d0
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G10 år 7er avd. 04 (runde 18)\n\nNesøya G10 Gul - Haslum G10 5
+ \nNesøya kunstgress 7er A onsdag 21.10.26 19:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261021T200900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T190000
+LOCATION:Nesøya kunstgress 7er A
+SEQUENCE:0
+SUMMARY:Nesøya G10 Gul - Haslum G10 5 -
+UID:1c05de1e-46b0-4182-b59b-fd8c17aa48d8
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J12 år 9er 3. div. avd. 01 (runde 21)\n\nHaslum J12 2 - Holmen
+  J12 Svart\nHaslum kunstgress 9er B onsdag 21.10.26 19:10\n\nwww.fotball.
+ no
+DTEND;TZID=Europe/Oslo:20261021T202900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T191000
+LOCATION:Haslum kunstgress 9er B
+SEQUENCE:0
+SUMMARY:Haslum J12 2 - Holmen J12 Svart -
+UID:dfd26b71-9204-4560-bb98-ae481e0c9c52
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G12 år 9er 2. div. avd. 01 (runde 18)\n\nHaslum G12 1 - Høvik 
+ G12 Blå\nHaslum kunstgress 9er A onsdag 21.10.26 19:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261021T202900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T191000
+LOCATION:Haslum kunstgress 9er A
+SEQUENCE:0
+SUMMARY:Haslum G12 1 - Høvik G12 Blå -
+UID:29da2eff-8050-4362-86ed-a21ab62f114a
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J14 3. div. avd. 01 (runde 18)\n\nHaslum J14-2 - Lommedalen J1
+ 4-3\nHaslum kunstgress 2 onsdag 21.10.26 19:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261021T202900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T191000
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum J14-2 - Lommedalen J14-3 -
+UID:17528b84-d227-4140-8de2-300a6b2002dd
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J11 år avd. 06 (runde 18)\n\nHeming J11 BLÅ - Haslum J11 1\nHe
+ ming kg 7er  onsdag 21.10.26 19:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261021T201900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T191000
+LOCATION:Heming kg 7er
+SEQUENCE:0
+SUMMARY:Heming J11 BLÅ - Haslum J11 1 -
+UID:1d685f87-5a43-4da1-9ade-1f345a6b0138
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G15 4. div. avd. 01 (runde 18)\n\nStabæk  G15-2 - Haslum G15-3
+ \nNadderud kunstgress 1 - Tobbebanen onsdag 21.10.26 20:30\n\nwww.fotball
+ .no
+DTEND;TZID=Europe/Oslo:20261021T215900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261021T203000
+LOCATION:Nadderud kunstgress 1 - Tobbebanen
+SEQUENCE:0
+SUMMARY:Stabæk  G15-2 - Haslum G15-3 -
+UID:f7299ef1-70ad-4dcf-880a-b89cb277cbdb
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 12 (runde 18)\n\nRøa G9 Bogstad2 - Haslum G9 6\nRø
+ a Zinober 5er A torsdag 22.10.26 16:49\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T174800
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T164900
+LOCATION:Røa Zinober 5er A
+SEQUENCE:0
+SUMMARY:Røa G9 Bogstad2 - Haslum G9 6 -
+UID:c0af1da4-7434-4991-8cf3-c3b1bde40c1a
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G08 år avd. 11 (runde 18)\n\nHaslum G8 5 - Øvrevoll Hosle G8 E
+ ikeli 2\nHaslum kunstgress 5er C torsdag 22.10.26 17:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T180900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T171000
+LOCATION:Haslum kunstgress 5er C
+SEQUENCE:0
+SUMMARY:Haslum G8 5 - Øvrevoll Hosle G8 Eikeli 2 -
+UID:3e786d6a-6ac5-4170-81b4-77592a985a1e
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G08 år avd. 09 (runde 18)\n\nHaslum G8 8 - Haslum G8 3\nHaslum
+  kunstgress 5er D torsdag 22.10.26 17:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T180900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T171000
+LOCATION:Haslum kunstgress 5er D
+SEQUENCE:0
+SUMMARY:Haslum G8 8 - Haslum G8 3 -
+UID:b31046e9-9a0b-4e9a-a786-3815c947201f
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G08 år avd. 07 (runde 18)\n\nSnarøya  G8 Grønn - Haslum G8 1\n
+ Hundsund kgb 1 5er D torsdag 22.10.26 17:20\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T181900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T172000
+LOCATION:Hundsund kgb 1 5er D
+SEQUENCE:0
+SUMMARY:Snarøya  G8 Grønn - Haslum G8 1 -
+UID:b1a95b28-cae6-445e-9aa0-7daeae527c57
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J10 år 7er avd. 04 (runde 18)\n\nHaslum J10 1 - Øvrevoll Hosle
+  J10 Gepards\nHaslum kunstgress 7er C torsdag 22.10.26 18:00\n\nwww.fotba
+ ll.no
+DTEND;TZID=Europe/Oslo:20261022T190900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T180000
+LOCATION:Haslum kunstgress 7er C
+SEQUENCE:0
+SUMMARY:Haslum J10 1 - Øvrevoll Hosle J10 Gepards -
+UID:c912030b-1859-4e7d-a0e8-afb572f3d893
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J09 år avd. 06 (runde 18)\n\nHaslum J9 3 - Stabæk  J9 2\nHaslu
+ m kunstgress 5er C torsdag 22.10.26 18:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T190900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T181000
+LOCATION:Haslum kunstgress 5er C
+SEQUENCE:0
+SUMMARY:Haslum J9 3 - Stabæk  J9 2 -
+UID:beea96c2-e310-43ba-b2f9-85ae055705bd
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 01 (runde 21)\n\nHaslum G9 1 - Asker SK G9 Gaupene
+ \nHaslum kunstgress 5er B torsdag 22.10.26 18:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T190900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T181000
+LOCATION:Haslum kunstgress 5er B
+SEQUENCE:0
+SUMMARY:Haslum G9 1 - Asker SK G9 Gaupene -
+UID:98dc74e6-0515-4e2c-996d-6d2c960a7f8d
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J09 år avd. 04 (runde 21)\n\nHaslum J9 1 - Frisk Asker J9 3\nH
+ aslum kunstgress 5er A torsdag 22.10.26 18:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T190900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T181000
+LOCATION:Haslum kunstgress 5er A
+SEQUENCE:0
+SUMMARY:Haslum J9 1 - Frisk Asker J9 3 -
+UID:a4d64f36-f94e-40d1-848a-cbefed527984
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J09 år avd. 05 (runde 21)\n\nHaslum J9 4 - Jutul J9 Rød\nHaslu
+ m kunstgress 5er D torsdag 22.10.26 18:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T190900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T181000
+LOCATION:Haslum kunstgress 5er D
+SEQUENCE:0
+SUMMARY:Haslum J9 4 - Jutul J9 Rød -
+UID:82076a12-eb12-4d12-8c4e-cbc220285706
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J14 2. div. avd. 01 (runde 18)\n\nHeming J14-2 - Haslum J14-1\
+ nHeming kunstgress torsdag 22.10.26 18:55\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T201400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T185500
+LOCATION:Heming kunstgress
+SEQUENCE:0
+SUMMARY:Heming J14-2 - Haslum J14-1 -
+UID:5b4ff710-13e6-4374-ae37-d4b684436ce4
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G12 år 9er 3. div. avd. 01 (runde 18)\n\nDikemark G12 Blå - Ha
+ slum G12 2\nDikemark kunstgress 9er A torsdag 22.10.26 18:55\n\nwww.fotba
+ ll.no
+DTEND;TZID=Europe/Oslo:20261022T201400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T185500
+LOCATION:Dikemark kunstgress 9er A
+SEQUENCE:0
+SUMMARY:Dikemark G12 Blå - Haslum G12 2 -
+UID:3ea1beec-1ef1-4f6e-92b2-e1981d640f51
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J12 år 9er 2. div. avd. 01 (runde 18)\n\nØvrevoll Hosle J12 Gu
+ l - Haslum J12 1\nEikeli kunstgress 9er  torsdag 22.10.26 18:55\n\nwww.fo
+ tball.no
+DTEND;TZID=Europe/Oslo:20261022T201400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T185500
+LOCATION:Eikeli kunstgress 9er
+SEQUENCE:0
+SUMMARY:Øvrevoll Hosle J12 Gul - Haslum J12 1 -
+UID:2d6608d8-4b87-4631-97cd-26f6767684a5
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G14 4. div. avd. 01 (runde 21)\n\nHaslum G14-2 - Lommedalen G1
+ 4-3\nHaslum kunstgress 2 torsdag 22.10.26 18:55\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T201400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T185500
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum G14-2 - Lommedalen G14-3 -
+UID:0bf416d2-85ec-4b04-8358-8fe501b75df1
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G12 år 9er 3. div. avd. 03 (runde 18)\n\nHaslum G12 5 - Frigg 
+  G12 3\nHaslum kunstgress 9er A torsdag 22.10.26 19:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T202900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T191000
+LOCATION:Haslum kunstgress 9er A
+SEQUENCE:0
+SUMMARY:Haslum G12 5 - Frigg  G12 3 -
+UID:1ea995bd-d3b8-47be-a925-d213767e796b
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G12 år 9er 4. div. avd. 01 (runde 18)\n\nHaslum G12 4 - Nesøya
+  G12 Blå\nHaslum kunstgress 9er B torsdag 22.10.26 19:10\n\nwww.fotball.n
+ o
+DTEND;TZID=Europe/Oslo:20261022T202900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T191000
+LOCATION:Haslum kunstgress 9er B
+SEQUENCE:0
+SUMMARY:Haslum G12 4 - Nesøya G12 Blå -
+UID:065f55a7-183b-4e44-aeb4-b2cee6487cf1
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J11 år avd. 04 (runde 18)\n\nØvrevoll Hosle J11 Blå - Haslum J
+ 11 2\nEikeli kunstgress 7er torsdag 22.10.26 19:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T201900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T191000
+LOCATION:Eikeli kunstgress 7er
+SEQUENCE:0
+SUMMARY:Øvrevoll Hosle J11 Blå - Haslum J11 2 -
+UID:c7fef846-3bcd-41f7-ac7a-3c74da38a54d
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G14 2. div. avd. 01 (runde 25)\n\nHaslum G14-1 - Heming G14-2\
+ nHaslum kunstgress 2 torsdag 22.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261022T213400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261022T201500
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum G14-1 - Heming G14-2 -
+UID:fd08f0a1-e5cf-408e-bac5-0c81be4d099b
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 09 (runde 18)\n\nHaslum G9 3 - Øvrevoll Hosle G9 E
+ ikeli 1\nHaslum kunstgress 5er A fredag 23.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261023T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261023T183000
+LOCATION:Haslum kunstgress 5er A
+SEQUENCE:0
+SUMMARY:Haslum G9 3 - Øvrevoll Hosle G9 Eikeli 1 -
+UID:3ece32a0-e7c8-4b0b-b2bf-23b43510789c
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 07 (runde 18)\n\nHaslum G9 5 - Holmen G9 Pool\nHas
+ lum kunstgress 5er C fredag 23.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261023T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261023T183000
+LOCATION:Haslum kunstgress 5er C
+SEQUENCE:0
+SUMMARY:Haslum G9 5 - Holmen G9 Pool -
+UID:556fd86e-f1d8-4203-a8c6-a76240dbdeb2
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J09 år avd. 05 (runde 21)\n\nJardar J9 1 - Haslum J9 2\nBjørne
+ gård kunstg. 5er B fredag 23.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261023T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261023T183000
+LOCATION:Bjørnegård kunstg. 5er B
+SEQUENCE:0
+SUMMARY:Jardar J9 1 - Haslum J9 2 -
+UID:eb5f50b9-9244-4960-9369-c276a236e72b
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 08 (runde 18)\n\nJardar G9 2 - Haslum G9 4\nBjørne
+ gård kunstg. 5er A fredag 23.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261023T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261023T183000
+LOCATION:Bjørnegård kunstg. 5er A
+SEQUENCE:0
+SUMMARY:Jardar G9 2 - Haslum G9 4 -
+UID:e4af6a93-80b3-4e55-b23d-db4ddd515f99
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 11 (runde 18)\n\nHaslum G9 9 - Røa G9 Bogstad\nHas
+ lum kunstgress 5er D fredag 23.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261023T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261023T183000
+LOCATION:Haslum kunstgress 5er D
+SEQUENCE:0
+SUMMARY:Haslum G9 9 - Røa G9 Bogstad -
+UID:6041e1c9-1a21-4f20-b97a-a19b094d2ba0
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G19 3. div. avd. 01 (runde 25)\n\nHaslum G19-2 - Snarøya  G19-
+ 1\nHaslum kunstgress 2 fredag 23.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261023T215400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261023T201500
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum G19-2 - Snarøya  G19-1 -
+UID:1692b1ac-55e3-4891-84b2-d93ed18b3ac8
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G19 4. div. (runde 25)\n\nKFUM G19-4 - Haslum G19-3\nEkeberg k
+ unstgress fredag 23.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261023T215400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261023T201500
+LOCATION:Ekeberg kunstgress
+SEQUENCE:0
+SUMMARY:KFUM G19-4 - Haslum G19-3 -
+UID:32a84b78-3714-4064-a18d-ad135dc434b4
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G13 1. div. B høst avd. 02 (runde 9)\n\nHaslum G13-1 - Ullern 
+ G13-2\nHaslum kunstgress 2 9er A lørdag 24.10.26 11:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261024T121900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261024T110000
+LOCATION:Haslum kunstgress 2 9er A
+SEQUENCE:0
+SUMMARY:Haslum G13-1 - Ullern G13-2 -
+UID:2f6c8e59-5578-4863-a0f9-5db66d78beff
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 06 (runde 18)\n\nHolmen G9 Villa - Haslum G9 10\nH
+ olmen gress 5er C lørdag 24.10.26 12:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261024T125900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261024T120000
+LOCATION:Holmen gress 5er C
+SEQUENCE:0
+SUMMARY:Holmen G9 Villa - Haslum G9 10 -
+UID:948eb198-9e33-40b6-b284-9857fc87a12e
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G08 år avd. 07 (runde 18)\n\nHaslum G8 6 - Lommedalen G8 Cobra
+ s\nHaslum kunstgress 5er A lørdag 24.10.26 12:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261024T125900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261024T120000
+LOCATION:Haslum kunstgress 5er A
+SEQUENCE:0
+SUMMARY:Haslum G8 6 - Lommedalen G8 Cobras -
+UID:e8777d7b-c20f-46ce-8bec-3b16f7664417
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G08 år avd. 10 (runde 18)\n\nUllern G8 Haaland - Haslum G8 4\n
+ Hullebergmyra kunstgress 5er B lørdag 24.10.26 12:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261024T125900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261024T120000
+LOCATION:Hullebergmyra kunstgress 5er B
+SEQUENCE:0
+SUMMARY:Ullern G8 Haaland - Haslum G8 4 -
+UID:d410f0bc-1ea9-4120-91e9-dca711143895
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J09 år avd. 06 (runde 18)\n\nJardar J9 3 - Haslum J9 5\nBjørne
+ gård kunstg. 5er B lørdag 24.10.26 13:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261024T135900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261024T130000
+LOCATION:Bjørnegård kunstg. 5er B
+SEQUENCE:0
+SUMMARY:Jardar J9 3 - Haslum J9 5 -
+UID:af7dccde-61f9-463a-bdd7-a001cbb7641f
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G08 år avd. 08 (runde 18)\n\nHaslum G8 7 - Jardar G8 2\nHaslum
+  kunstgress 5er A lørdag 24.10.26 13:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261024T135900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261024T130000
+LOCATION:Haslum kunstgress 5er A
+SEQUENCE:0
+SUMMARY:Haslum G8 7 - Jardar G8 2 -
+UID:968f9895-c10a-40c3-b83d-bd67e5758fe6
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G10 år 7er avd. 09 (runde 18)\n\nØvrevoll Hosle G10 Grav - Has
+ lum G10 1\nEikeli kunstgress 7er lørdag 24.10.26 17:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261024T180900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261024T170000
+LOCATION:Eikeli kunstgress 7er
+SEQUENCE:0
+SUMMARY:Øvrevoll Hosle G10 Grav - Haslum G10 1 -
+UID:5cbf7a08-9db6-4f9f-a6ad-f01fb25d6113
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G19 Interkrets A (runde 22)\n\nHaslum G19-1 - Skeid G19-1\nHas
+ lum kunstgress 2 søndag 25.10.26 14:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261025T154400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261025T140000
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum G19-1 - Skeid G19-1 -
+UID:7d69f130-fe60-4641-aa27-9d55e54c9222
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J19 3. div. (runde 21)\n\nDikemark J19-1 - Haslum J19-1\nDikem
+ ark kunstgress søndag 25.10.26 16:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261025T180900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261025T163000
+LOCATION:Dikemark kunstgress
+SEQUENCE:0
+SUMMARY:Dikemark J19-1 - Haslum J19-1 -
+UID:2fa30b39-831b-4823-b6f9-563ddb3ff3b5
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 1)\n\nVestre Aker G13-1 - Haslum 
+ G13-1\nHaugenstua Idrettshall søndag 25.10.26 17:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261025T175500
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261025T173000
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Vestre Aker G13-1 - Haslum G13-1 -
+UID:171bce31-ee4d-493e-9c1a-b16e834d9797
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G13 2. div. høst avd. 01 (runde 9)\n\nHaslum G13-2 - Lyn G13-2
+ \nHaslum kunstgress 2 9er B søndag 25.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261025T194900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261025T183000
+LOCATION:Haslum kunstgress 2 9er B
+SEQUENCE:0
+SUMMARY:Haslum G13-2 - Lyn G13-2 -
+UID:e10c61ba-0dd7-4ec6-af65-8b39c5215097
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 2)\n\nJutul G13-1 - Haslum G13-1\
+ nHaugenstua Idrettshall søndag 25.10.26 18:40\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261025T190500
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261025T184000
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Jutul G13-1 - Haslum G13-1 -
+UID:e60f0f3f-02ca-484e-b374-b493ef66e510
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G15 1. div. B avd. 02  (runde 22)\n\nReady G15-2 - Haslum G15-
+ 1\nVoksen kunstgress søndag 25.10.26 20:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261025T212900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261025T200000
+LOCATION:Voksen kunstgress
+SEQUENCE:0
+SUMMARY:Ready G15-2 - Haslum G15-1 -
+UID:4ee3e8b5-64cd-4a44-b6f4-5e78ca943bf7
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G19 4. div. (runde 26)\n\nHaslum G19-3 - Stovner SK G19-2\nHas
+ lum kunstgress 2 mandag 26.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261026T215400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261026T201500
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum G19-3 - Stovner SK G19-2 -
+UID:b88934e2-e209-4fcd-a6da-40329ed0ec5b
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G16 4. div.  avd. 01 (runde 21)\n\nHaslum G16-2 - Lille Tøyen 
+ G16-1\nHaslum kunstgress mandag 26.10.26 20:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261026T215900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261026T203000
+LOCATION:Haslum kunstgress
+SEQUENCE:0
+SUMMARY:Haslum G16-2 - Lille Tøyen G16-1 -
+UID:fe50ea64-6343-48d2-a69a-ad22e8ee7920
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 01 (runde 22)\n\nSkeid G9 Jaguar - Haslum G9 1\nNo
+ rdre Åsen 2 kg 5er D tirsdag 27.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261027T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261027T183000
+LOCATION:Nordre Åsen 2 kg 5er D
+SEQUENCE:0
+SUMMARY:Skeid G9 Jaguar - Haslum G9 1 -
+UID:019f4397-95b8-4dec-9d84-9caa10752af0
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G12 år 9er 4. div. avd. 01 (runde 17)\n\nBVH G12 Levre 2 - Has
+ lum G12 4\nHauger kunstgress 9er A tirsdag 27.10.26 18:30\n\nwww.fotball.
+ no
+DTEND;TZID=Europe/Oslo:20261027T194900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261027T183000
+LOCATION:Hauger kunstgress 9er A
+SEQUENCE:0
+SUMMARY:BVH G12 Levre 2 - Haslum G12 4 -
+UID:b55ac84e-2941-4564-a10c-a93c44821b52
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G16 2. div.  (runde 22)\n\nKFUM G16-1 - Haslum G16-1\nKFUM-Are
+ na tirsdag 27.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261027T214400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261027T201500
+LOCATION:KFUM-Arena
+SEQUENCE:0
+SUMMARY:KFUM G16-1 - Haslum G16-1 -
+UID:4ed01209-93f8-41fe-8001-fc87182d6835
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:4. div. menn avd. 01 (runde 22)\n\nHolmlia A - Haslum Menn 1\n
+ Lusetjern kunstgress tirsdag 27.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261027T215400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261027T201500
+LOCATION:Lusetjern kunstgress
+SEQUENCE:0
+SUMMARY:Holmlia A - Haslum Menn 1 -
+UID:f1a80a01-8c04-4a9f-b78b-ec04c521f9ff
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J17 3. div. avd. 01 (runde 21)\n\nHaslum J17-1 - Ready J17-2\n
+ Haslum kunstgress 2 tirsdag 27.10.26 20:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261027T215900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261027T203000
+LOCATION:Haslum kunstgress 2
+SEQUENCE:0
+SUMMARY:Haslum J17-1 - Ready J17-2 -
+UID:84bc26c5-78ed-4d6d-843f-5b88596c0fd5
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G09 år avd. 02 (runde 22)\n\nHaslum G9 8 - Oppsal  G9 3\nHaslu
+ m kunstgress 5er A onsdag 28.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261028T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261028T183000
+LOCATION:Haslum kunstgress 5er A
+SEQUENCE:0
+SUMMARY:Haslum G9 8 - Oppsal  G9 3 -
+UID:d239753c-807b-4cbf-ab55-88e293cb06ca
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J10 år 7er avd. 01 (runde 22)\n\nHaslum J10 2 - Gui J10 2\nHas
+ lum kunstgress 7er D onsdag 28.10.26 19:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261028T200900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261028T190000
+LOCATION:Haslum kunstgress 7er D
+SEQUENCE:0
+SUMMARY:Haslum J10 2 - Gui J10 2 -
+UID:93fcc5a6-4fad-48e3-ae42-369c34e3654a
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G11 år avd. 01 (runde 26)\n\nVålerenga  G11 Jones EA - Haslum 
+ G11 1\nValle Hovin kunstgress 7er A onsdag 28.10.26 19:05\n\nwww.fotball.
+ no
+DTEND;TZID=Europe/Oslo:20261028T201400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261028T190500
+LOCATION:Valle Hovin kunstgress 7er A
+SEQUENCE:0
+SUMMARY:Vålerenga  G11 Jones EA - Haslum G11 1 -
+UID:9664e84d-6bec-4026-87cf-e8ef0111e254
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J12 år 9er 3. div. avd. 01 (runde 22)\n\nVestre Aker J12 Hurri
+ cane - Haslum J12 2\nVoksen kunstgr. 9er A onsdag 28.10.26 19:10\n\nwww.f
+ otball.no
+DTEND;TZID=Europe/Oslo:20261028T202900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261028T191000
+LOCATION:Voksen kunstgr. 9er A
+SEQUENCE:0
+SUMMARY:Vestre Aker J12 Hurricane - Haslum J12 2 -
+UID:2e11e221-5eac-4ec4-b3fa-fae41708bf51
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J09 år avd. 04 (runde 22)\n\nGui J9 3 - Haslum J9 1\nArnestad 
+ kunstgress 7er 2 5er A torsdag 29.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261029T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261029T183000
+LOCATION:Arnestad kunstgress 7er 2 5er A
+SEQUENCE:0
+SUMMARY:Gui J9 3 - Haslum J9 1 -
+UID:a2aa5340-391d-478b-add9-1fcc88abcfad
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J09 år avd. 05 (runde 22)\n\nHaslum J9 2 - Høvik J9 Blå\nHaslu
+ m kunstgress 5er B torsdag 29.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261029T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261029T183000
+LOCATION:Haslum kunstgress 5er B
+SEQUENCE:0
+SUMMARY:Haslum J9 2 - Høvik J9 Blå -
+UID:d3aeb711-c1b6-4fc0-b334-4ffdc7c3e586
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:J09 år avd. 05 (runde 22)\n\nFossum J9 Gul - Haslum J9 4\nBark
+ etomta kunstgressbane 5er torsdag 29.10.26 18:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261029T192900
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261029T183000
+LOCATION:Barketomta kunstgressbane 5er
+SEQUENCE:0
+SUMMARY:Fossum J9 Gul - Haslum J9 4 -
+UID:8394ccc9-dc2f-46d7-8776-16aa62e6c08e
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G14 4. div. avd. 01 (runde 22)\n\nUllern G14-5 - Haslum G14-2\
+ nUllern kunstgress torsdag 29.10.26 18:55\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261029T201400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261029T185500
+LOCATION:Ullern kunstgress
+SEQUENCE:0
+SUMMARY:Ullern G14-5 - Haslum G14-2 -
+UID:7de28464-eeb3-4703-98f0-175e7112288e
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G14 2. div. avd. 01 (runde 26)\n\nVålerenga  G14-2 - Haslum G1
+ 4-1\nValle Hovin kunstgress 2 torsdag 29.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261029T213400
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261029T201500
+LOCATION:Valle Hovin kunstgress 2
+SEQUENCE:0
+SUMMARY:Vålerenga  G14-2 - Haslum G14-1 -
+UID:0076b079-86da-4f30-9639-4b577b1d9ea5
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 3)\n\nHaslum G13-1 - Oppegård G13
+ -1\nHaugenstua Idrettshall søndag 15.11.26 10:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261115T105500
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261115T103000
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Haslum G13-1 - Oppegård G13-1 -
+UID:b514dc0d-6a98-4d29-a14c-4dc0bdce9c58
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 4)\n\nHaslum G13-1 - Veitvet  G13
+ -2\nHaugenstua Idrettshall søndag 15.11.26 11:05\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261115T113000
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261115T110500
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Haslum G13-1 - Veitvet  G13-2 -
+UID:90ba2a09-ef64-4672-ac2e-014f2ae7d5c7
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 5)\n\nÅrvoll G13-1 - Haslum G13-1
+ \nHaugenstua Idrettshall søndag 13.12.26 15:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261213T153500
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261213T151000
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Årvoll G13-1 - Haslum G13-1 -
+UID:4c57ec2d-8eaf-472a-b4e8-59a9103fd060
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 6)\n\nEllingsrud G13-1 - Haslum G
+ 13-1\nHaugenstua Idrettshall søndag 13.12.26 16:20\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261213T164500
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20261213T162000
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Ellingsrud G13-1 - Haslum G13-1 -
+UID:eea64bf9-fd84-467f-bc7d-8df26508d8ce
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 8)\n\nHaslum G13-1 - Vestre Aker 
+ G13-1\nHaugenstua Idrettshall søndag 10.01.27 14:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270110T142500
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20270110T140000
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Haslum G13-1 - Vestre Aker G13-1 -
+UID:1b0c37a6-f0c6-4d9e-887f-e11ba4616257
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 7)\n\nHaslum G13-1 - Grorud G13-1
+ \nHaugenstua Idrettshall søndag 10.01.27 14:35\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270110T150000
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20270110T143500
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Haslum G13-1 - Grorud G13-1 -
+UID:41b9f681-f693-4753-8eb6-e77cf11682e9
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 9)\n\nHaslum G13-1 - Jutul G13-1\
+ nHaugenstua Idrettshall søndag 24.01.27 16:55\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270124T172000
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20270124T165500
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Haslum G13-1 - Jutul G13-1 -
+UID:810b6fad-da8d-4f71-b272-d3c3db78864a
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 10)\n\nHaslum G13-1 - Oppegård G1
+ 3-1\nHaugenstua Idrettshall søndag 24.01.27 18:05\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270124T183000
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20270124T180500
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Haslum G13-1 - Oppegård G13-1 -
+UID:bef1d404-1cc4-4950-874d-8e9a1b77c54e
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 12)\n\nÅrvoll G13-1 - Haslum G13-
+ 1\nHaugenstua Idrettshall søndag 14.02.27 13:25\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270214T135000
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20270214T132500
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Årvoll G13-1 - Haslum G13-1 -
+UID:4b3a207d-9ef7-4111-8649-9b0c791c36f0
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 11)\n\nVeitvet  G13-2 - Haslum G1
+ 3-1\nHaugenstua Idrettshall søndag 14.02.27 14:35\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270214T150000
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20270214T143500
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Veitvet  G13-2 - Haslum G13-1 -
+UID:f0e3f36c-e06c-4b6f-8764-46ec56c5b9d4
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 13)\n\nHaslum G13-1 - Ellingsrud 
+ G13-1\nHaugenstua Idrettshall søndag 28.02.27 16:55\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270228T172000
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20270228T165500
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Haslum G13-1 - Ellingsrud G13-1 -
+UID:93d8f67b-8f88-4cf0-9b8c-53ba4466f22a
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal G13 år avd. 02 (runde 14)\n\nGrorud G13-1 - Haslum G13-
+ 1\nHaugenstua Idrettshall søndag 28.02.27 18:05\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270228T183000
+DTSTAMP:20261020T074813Z
+DTSTART;TZID=Europe/Oslo:20270228T180500
+LOCATION:Haugenstua Idrettshall
+SEQUENCE:0
+SUMMARY:Grorud G13-1 - Haslum G13-1 -
+UID:0aedee7c-a04c-4803-aaf3-89bb304bd9de
+END:VEVENT
+END:VCALENDAR

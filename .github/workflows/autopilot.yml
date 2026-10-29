@@ -1,0 +1,192 @@
+# Runs the autopilot in GitHub Actions (free): fetch → generate → publish what is due,
+# then commits the new data back to the repo and deploys the dashboard to Cloudflare Pages.
+# Also runs when someone uses a button on the dashboard (repository_dispatch "dashboard-action").
+name: Autopilot
+
+on:
+  schedule:
+    # A backup only: the planlegger Worker starts this every 2 hours (repository_dispatch "scheduled-run").
+    # Four times a day here (07:37, 11:37, 15:37, 19:37 UTC), so posts still go out if the Worker stops.
+    - cron: '37 7,11,15,19 * * *'
+  repository_dispatch:
+    types: [dashboard-action, scheduled-run]  # scheduled-run: the planlegger Worker (on time, unlike cron)
+  workflow_dispatch:
+    inputs:
+      publish_now:
+        description: 'Publish one item now (key from the dashboard, e.g. 2026-10-25/kamper-feed). Empty = normal run.'
+        required: false
+        default: ''
+
+# Never two runs at the same time (that could post twice); dashboard clicks queue up.
+concurrency:
+  group: autopilot
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  autopilot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install cloudflared (temporary public URL for the images)
+        run: |
+          curl -fsSL -o /usr/local/bin/cloudflared https://github.com/cloudflare/cloudflared/releases/download/2026.10.2/cloudflared-linux-amd64
+          chmod +x /usr/local/bin/cloudflared
+          cloudflared --version
+
+      - name: Apply dashboard action
+        id: control
+        if: github.event_name == 'repository_dispatch' && github.event.action == 'dashboard-action'
+        env:
+          # { action, by } from the dashboard; validated again by the control script.
+          DASHBOARD_ACTION: ${{ toJSON(github.event.client_payload) }}
+        run: npm run control
+
+      - name: Run
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          TOKEN_ENCRYPTION_KEY: ${{ secrets.TOKEN_ENCRYPTION_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PUBLISH_NOW: ${{ steps.control.outputs.publish_key || inputs.publish_now }}
+        run: |
+          if [ -n "$PUBLISH_NOW" ]; then
+            npm run fetch
+            npm run generate -- --offline --with-previous
+            npm run publish -- --only "$PUBLISH_NOW" --now
+          else
+            npm run autopilot
+          fi
+
+      - name: Save data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Whole folders: a file that does not exist yet must not stop the others (logs and the
+          # plain token are git-ignored). The publish log MUST get pushed, or items get posted twice.
+          git add -A -- data config
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git commit -m "data: ${{ github.event.action == 'dashboard-action' && 'dashboard action' || 'autopilot run' }} $(date -u +%Y-%m-%dT%H:%MZ)"
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "Push failed (attempt $attempt), retrying..."
+            sleep 5
+          done
+          echo "::error::Could not save the publish log to the repo. Check before the next run to avoid double posts."
+          exit 1
+
+      # A deploy takes 20–30 s, enough to push a run with nothing to do over a billed minute. So it is skipped
+      # when nothing the dashboard shows has changed since the last deploy in this 6-hour block. Files that
+      # change on every run (run status, insights, fetch state) don't count; they catch up within 6 hours.
+      # Posts and dashboard clicks change the publish log or the controls, so they still deploy at once.
+      - name: Dashboard fingerprint
+        id: fingerprint
+        if: always()
+        env:
+          ACCESS_TEAM_DOMAIN: ${{ vars.ACCESS_TEAM_DOMAIN || 'fotball-resultater-pages.cloudflareaccess.com' }}
+          ACCESS_AUD: ${{ secrets.ACCESS_AUD }}
+          DASHBOARD_GITHUB_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOKEN }}
+        run: |
+          files=$(git ls-files -s | grep -vE '(status|insights|fetch-state)\.json$|instagram-token\.enc$' | sha256sum | cut -c1-16)
+          block="$(TZ=Europe/Oslo date +%F)-$(( $(TZ=Europe/Oslo date +%-H) / 6 ))"
+          echo "deployed=dashboard-baerumsk-$files-$block" >> "$GITHUB_OUTPUT"
+          # The button settings are put on the Pages project only when they change: a hash, never the values.
+          echo "settings=pages-settings-baerumsk-$(printf '%s\n' "$ACCESS_TEAM_DOMAIN" "$ACCESS_AUD" "$GITHUB_REPOSITORY" "$DASHBOARD_GITHUB_TOKEN" | sha256sum | cut -c1-16)" >> "$GITHUB_OUTPUT"
+          mkdir -p "$RUNNER_TEMP/marker" && echo ok > "$RUNNER_TEMP/marker/ok"
+
+      - name: Dashboard already deployed?
+        id: deployed
+        if: always() && steps.fingerprint.outcome == 'success'
+        uses: actions/cache/restore@v6
+        with:
+          path: ${{ runner.temp }}/marker
+          key: ${{ steps.fingerprint.outputs.deployed }}
+          lookup-only: true
+
+      - name: Dashboard settings already set?
+        id: settings
+        if: always() && steps.fingerprint.outcome == 'success'
+        uses: actions/cache/restore@v6
+        with:
+          path: ${{ runner.temp }}/marker
+          key: ${{ steps.fingerprint.outputs.settings }}
+          lookup-only: true
+
+      - name: Deploy dashboard (Cloudflare Pages)
+        id: deploy
+        if: always() && (steps.deployed.outputs.cache-hit != 'true' || github.event_name == 'workflow_dispatch' || github.event.action == 'dashboard-action')
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          PAGES_PROJECT: ${{ vars.PAGES_PROJECT || 'fotball-baerumsk' }}
+          ACCESS_TEAM_DOMAIN: ${{ vars.ACCESS_TEAM_DOMAIN || 'fotball-resultater-pages.cloudflareaccess.com' }}
+          ACCESS_AUD: ${{ secrets.ACCESS_AUD }}
+          DASHBOARD_GITHUB_TOKEN: ${{ secrets.DASHBOARD_GITHUB_TOKEN }}
+          SETTINGS_SET: ${{ steps.settings.outputs.cache-hit }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "Cloudflare not configured yet; skipping dashboard deploy."
+            exit 0
+          fi
+          rm -rf output/_publish
+          cd cloud
+          # The Pages project is created only when it is missing (first deploy).
+          create() { npx --yes wrangler@4 pages project create "$PAGES_PROJECT" --production-branch=main >/dev/null 2>&1 || true; }
+          # Settings for the dashboard buttons (cloud/functions/api/action.ts), copied from the GitHub secrets
+          # in one call, and only when they changed.
+          if [ -n "$ACCESS_TEAM_DOMAIN" ] && [ -n "$ACCESS_AUD" ] && [ -n "$DASHBOARD_GITHUB_TOKEN" ]; then
+            if [ "$SETTINGS_SET" = "true" ]; then
+              echo "Dashboard button settings unchanged."
+            else
+              umask 077
+              node -e 'const e = process.env; process.stdout.write(JSON.stringify({ ACCESS_TEAM_DOMAIN: e.ACCESS_TEAM_DOMAIN, ACCESS_AUD: e.ACCESS_AUD, GITHUB_REPO: e.GITHUB_REPOSITORY, GITHUB_TOKEN: e.DASHBOARD_GITHUB_TOKEN }))' > "$RUNNER_TEMP/settings.json"
+              put() { npx --yes wrangler@4 pages secret bulk "$RUNNER_TEMP/settings.json" --project-name="$PAGES_PROJECT" >/dev/null; }
+              if put || { create; put; }; then
+                echo "settings_set=true" >> "$GITHUB_OUTPUT"
+                echo "Dashboard button settings updated."
+              else
+                echo "::warning::Could not set the dashboard button settings on the Pages project"
+              fi
+              rm -f "$RUNNER_TEMP/settings.json"
+            fi
+          else
+            echo "Dashboard buttons not configured yet (secrets ACCESS_AUD and DASHBOARD_GITHUB_TOKEN)."
+          fi
+          deploy() { npx --yes wrangler@4 pages deploy ../output --project-name="$PAGES_PROJECT" --branch=main --commit-dirty=true; }
+          deploy || { create; deploy; }
+
+      - name: Remember the deploy
+        if: always() && steps.deploy.outcome == 'success' && steps.deployed.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v6
+        with:
+          path: ${{ runner.temp }}/marker
+          key: ${{ steps.fingerprint.outputs.deployed }}
+
+      - name: Remember the dashboard settings
+        if: always() && steps.deploy.outputs.settings_set == 'true'
+        uses: actions/cache/save@v6
+        with:
+          path: ${{ runner.temp }}/marker
+          key: ${{ steps.fingerprint.outputs.settings }}
+
+      - name: Upload gallery
+        if: failure()
+        uses: actions/upload-artifact@v5
+        with:
+          name: gallery
+          path: output/
+          retention-days: 7

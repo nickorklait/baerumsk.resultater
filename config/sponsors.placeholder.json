@@ -1,0 +1,19 @@
+{
+  "kind": "placeholder",
+  "source": "Placeholder slots showing where a club's sponsors would appear. No real or invented sponsors.",
+  "approvedForPublishing": true,
+  "labels": {
+    "main": "Hovedsponsor",
+    "team": "Lagsponsor",
+    "match": "Ukens kampsponsor",
+    "partner": "Samarbeidspartnere"
+  },
+  "partnersPerPost": 3,
+  "sponsors": [
+    { "id": "plass-hovedsponsor", "name": "Din sponsor her", "role": "main" },
+    { "id": "plass-partner-1", "name": "Sponsor", "role": "partner" },
+    { "id": "plass-partner-2", "name": "Sponsor", "role": "partner" },
+    { "id": "plass-partner-3", "name": "Sponsor", "role": "partner" }
+  ],
+  "matchSponsorOfTheWeek": {}
+}

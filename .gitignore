@@ -1,0 +1,9 @@
+node_modules/
+output/
+.env
+# data/snapshots/ is deliberately NOT ignored: the club feed only covers ~48 h back,
+# so past results exist only in these snapshots.
+data/fetch.log
+data/autopilot.log
+data/instagram-token.json
+output/_publish/

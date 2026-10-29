@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+# Feed snapshots are kept byte for byte as fetched.
+*.ics -text
+*.png binary
+*.jpg binary
+*.ttf binary
