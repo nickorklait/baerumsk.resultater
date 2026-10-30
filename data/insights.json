@@ -2,7 +2,7 @@
   "followers": [
     {
       "date": "2026-10-30",
-      "count": 0
+      "count": 5
     }
   ],
   "media": {},
@@ -12,9 +12,9 @@
     "picture": true,
     "website": false,
     "follows": 1,
-    "followers": 0,
+    "followers": 5,
     "media": 0,
-    "checkedAt": "2026-10-30T13:29:41.156Z"
+    "checkedAt": "2026-10-30T20:17:43.721Z"
   },
-  "updatedAt": "2026-10-30T13:29:41.156Z"
+  "updatedAt": "2026-10-30T20:17:43.721Z"
 }

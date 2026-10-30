@@ -1,16 +1,16 @@
 {
   "fetch": {
-    "at": "2026-10-30T13:29:36.227Z",
+    "at": "2026-10-30T20:17:36.897Z",
     "reports": [
       {
         "source": "club-89",
         "status": "fetched",
-        "detail": "19 events -> club-89_20261030T132936Z.ics"
+        "detail": "18 events -> club-89_20261030T201736Z.ics"
       }
     ]
   },
   "generate": {
-    "at": "2026-10-30T13:29:39.270Z",
+    "at": "2026-10-30T20:17:41.907Z",
     "weeks": [
       {
         "key": "2026-10-25",
@@ -25,7 +25,7 @@
     ]
   },
   "publish": {
-    "at": "2026-10-30T13:29:39.621Z",
+    "at": "2026-10-30T20:17:42.427Z",
     "paused": false,
     "published": [],
     "failed": [],
