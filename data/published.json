@@ -1,0 +1,42 @@
+{
+  "2026-11-01/resultat-menn-senior-a-2026-10-31-feed": {
+    "publishedAt": "2026-10-31T13:52:51.858Z",
+    "kind": "feed",
+    "mediaIds": [
+      "18114251006323811"
+    ],
+    "permalink": "https://www.instagram.com/p/DfKTuHimzMM/",
+    "label": "Menn Senior A: Bærum Menn Senior A 4–4 Frigg Oslo FK Menn Senior 1",
+    "sponsors": [
+      "plass-hovedsponsor",
+      "plass-partner-1",
+      "plass-partner-2",
+      "plass-partner-3"
+    ],
+    "teams": [
+      "Bærum Menn Senior A"
+    ],
+    "images": 1,
+    "thumb": "2026-11-01/resultat-menn-senior-a-2026-10-31_feed.png"
+  },
+  "2026-11-01/resultat-menn-senior-a-2026-10-31-story": {
+    "publishedAt": "2026-10-31T13:52:57.365Z",
+    "kind": "story",
+    "mediaIds": [
+      "18208717819374025"
+    ],
+    "permalink": null,
+    "label": "Menn Senior A: Bærum Menn Senior A 4–4 Frigg Oslo FK Menn Senior 1 (story)",
+    "sponsors": [
+      "plass-hovedsponsor",
+      "plass-partner-1",
+      "plass-partner-2",
+      "plass-partner-3"
+    ],
+    "teams": [
+      "Bærum Menn Senior A"
+    ],
+    "images": 1,
+    "thumb": "2026-11-01/resultat-menn-senior-a-2026-10-31_story.png"
+  }
+}

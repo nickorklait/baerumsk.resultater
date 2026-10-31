@@ -1,0 +1,195 @@
+BEGIN:VCALENDAR
+PRODID:-//github.com/ical-org/ical.net//NONSGML ical.net 4.0//EN
+VERSION:2.0
+X-WR-CALNAME:Alle kamper i Bærum 2
+BEGIN:VEVENT
+DESCRIPTION:G19 1. div. (runde 26)\n\nØvrevoll Hosle G19-1 - Bærum G19-2\n
+ Ferd arena Hosle (kg) torsdag 29.10.26 20:15\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261029T215400
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20261029T201500
+LOCATION:Ferd arena Hosle (kg)
+SEQUENCE:0
+SUMMARY:Øvrevoll Hosle G19-1 - Bærum G19-2 8 - 0
+UID:6cddedfa-0725-4d02-ac87-6ee314f51c7a
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Norsk Tipping-ligaen avd. 1 (runde 26)\n\nBærum Menn Senior A 
+ - Frigg Oslo FK Menn Senior 1\nAJ Arena lørdag 31.10.26 13:00\n\nwww.fotb
+ all.no
+DTEND;TZID=Europe/Oslo:20261031T144500
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20261031T130000
+LOCATION:AJ Arena
+SEQUENCE:0
+SUMMARY:Bærum Menn Senior A - Frigg Oslo FK Menn Senior 1 4 - 4
+UID:ee8c7e80-ca27-4be9-9162-ed4fa48084f4
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:G12 år 9er 1. div. avd. 01 (runde 15)\n\nBærum G12 1 - Stabæk 
+  G12 2\nAJ Arena 9er A onsdag 04.11.26 18:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261104T192900
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20261104T181000
+LOCATION:AJ Arena 9er A
+SEQUENCE:0
+SUMMARY:Bærum G12 1 - Stabæk  G12 2 -
+UID:3c330d3c-6e5f-45d6-ab6e-e57e9b818b62
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 1)\n\nGrüner Allianse J10  - Bæru
+ m J10 1\nVahl Flerbrukshall lørdag 07.11.26 09:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261107T095000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20261107T093000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Grüner Allianse J10  - Bærum J10 1 -
+UID:dc4929e4-8a8d-48ea-85da-8ff6db37c3f1
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 2)\n\nStabæk  J10 1 - Bærum J10 1
+ \nVahl Flerbrukshall lørdag 07.11.26 10:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261107T105000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20261107T103000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Stabæk  J10 1 - Bærum J10 1 -
+UID:c83371c5-be6a-4151-b269-92fe98a42819
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 4)\n\nReady J10 Blå - Bærum J10 1
+ \nVahl Flerbrukshall lørdag 21.11.26 16:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261121T162000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20261121T160000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Ready J10 Blå - Bærum J10 1 -
+UID:d0c406b4-51bf-4dab-9b5d-d1d232d9782f
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 3)\n\nFossum J10 1 - Bærum J10 1\
+ nVahl Flerbrukshall lørdag 21.11.26 17:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261121T172000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20261121T170000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Fossum J10 1 - Bærum J10 1 -
+UID:399afeb3-1683-45f5-a87f-6cc90a790fa0
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 5)\n\nBærum J10 1 - Monolitten Id
+ rettslag J10 Blå\nVahl Flerbrukshall lørdag 05.12.26 09:30\n\nwww.fotball
+ .no
+DTEND;TZID=Europe/Oslo:20261205T095000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20261205T093000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Monolitten Idrettslag J10 Blå -
+UID:e541c276-2d24-43d7-b7aa-1e17999b7f73
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 6)\n\nBærum J10 1 - Vålerenga J10
+  \nVahl Flerbrukshall lørdag 05.12.26 10:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261205T102000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20261205T100000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Vålerenga J10  -
+UID:7ff9ff3d-8b0b-48c9-b85d-107949f465a7
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 7)\n\nJutul J10 1 - Bærum J10 1\n
+ Vahl Flerbrukshall lørdag 09.01.27 13:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270109T135000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20270109T133000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Jutul J10 1 - Bærum J10 1 -
+UID:4d9f3f3b-cae6-42ce-a919-7606d8d9e328
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 8)\n\nGrüner Allianse J10  - Bæru
+ m J10 1\nVahl Flerbrukshall lørdag 09.01.27 14:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270109T145000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20270109T143000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Grüner Allianse J10  - Bærum J10 1 -
+UID:9dfe727f-c8af-46b3-aacb-4b7d0c1c0efb
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 9)\n\nStabæk  J10 1 - Bærum J10 1
+ \nVahl Flerbrukshall lørdag 16.01.27 09:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270116T095000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20270116T093000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Stabæk  J10 1 - Bærum J10 1 -
+UID:0a5f5cb4-f8ef-4e27-9880-042a7ca90bf8
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 10)\n\nFossum J10 1 - Bærum J10 1
+ \nVahl Flerbrukshall lørdag 16.01.27 10:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270116T105000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20270116T103000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Fossum J10 1 - Bærum J10 1 -
+UID:82e891f9-c862-4b52-929a-0acaa261936c
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 11)\n\nBærum J10 1 - Ready J10 Bl
+ å\nVahl Flerbrukshall lørdag 06.02.27 15:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270206T152000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20270206T150000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Ready J10 Blå -
+UID:8f5bec05-c249-4808-ad9c-3c6b5e4005da
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 12)\n\nBærum J10 1 - Monolitten I
+ drettslag J10 Blå\nVahl Flerbrukshall lørdag 06.02.27 16:00\n\nwww.fotbal
+ l.no
+DTEND;TZID=Europe/Oslo:20270206T162000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20270206T160000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Monolitten Idrettslag J10 Blå -
+UID:0cf1b456-f94a-471a-a932-f18c79c442bb
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 13)\n\nBærum J10 1 - Vålerenga J1
+ 0 \nVahl Flerbrukshall lørdag 06.03.27 09:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270306T095000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20270306T093000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Vålerenga J10  -
+UID:331b0826-13c2-41bd-a5d2-1e3e09aceac6
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 14)\n\nBærum J10 1 - Jutul J10 1\
+ nVahl Flerbrukshall lørdag 06.03.27 10:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270306T105000
+DTSTAMP:20261031T135225Z
+DTSTART;TZID=Europe/Oslo:20270306T103000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Jutul J10 1 -
+UID:ef79663c-9d99-470f-bac8-50f9e2472033
+END:VEVENT
+END:VCALENDAR
