@@ -1,16 +1,16 @@
 {
   "fetch": {
-    "at": "2026-10-31T13:52:25.804Z",
+    "at": "2026-10-31T19:31:56.871Z",
     "reports": [
       {
         "source": "club-89",
         "status": "fetched",
-        "detail": "17 events -> club-89_20261031T135225Z.ics"
+        "detail": "unchanged since the last snapshot"
       }
     ]
   },
   "generate": {
-    "at": "2026-10-31T13:52:29.774Z",
+    "at": "2026-10-31T19:32:01.766Z",
     "weeks": [
       {
         "key": "2026-10-25",
@@ -25,12 +25,9 @@
     ]
   },
   "publish": {
-    "at": "2026-10-31T13:52:57.440Z",
+    "at": "2026-10-31T19:32:02.243Z",
     "paused": false,
-    "published": [
-      "2026-11-01/resultat-menn-senior-a-2026-10-31-feed",
-      "2026-11-01/resultat-menn-senior-a-2026-10-31-story"
-    ],
+    "published": [],
     "failed": [],
     "waiting": 2
   }
