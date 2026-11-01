@@ -7,13 +7,17 @@
     {
       "date": "2026-10-31",
       "count": 6
+    },
+    {
+      "date": "2026-11-01",
+      "count": 6
     }
   ],
   "media": {
     "2026-11-01/resultat-menn-senior-a-2026-10-31-feed": {
       "mediaId": "18114251006323811",
       "kind": "feed",
-      "fetchedAt": "2026-10-31T22:49:32.556Z",
+      "fetchedAt": "2026-11-01T14:29:34.539Z",
       "reach": 0,
       "likes": 0,
       "comments": 0,
@@ -37,7 +41,7 @@
     "follows": 1,
     "followers": 6,
     "media": 1,
-    "checkedAt": "2026-10-31T22:49:32.104Z"
+    "checkedAt": "2026-11-01T14:29:34.178Z"
   },
-  "updatedAt": "2026-10-31T22:49:32.889Z"
+  "updatedAt": "2026-11-01T14:29:34.539Z"
 }
