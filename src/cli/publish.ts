@@ -127,7 +127,9 @@ try {
   await host.close();
   updateStatus('publish', { paused: controls.paused, published: done, failed, waiting });
 }
-if (failed.length) process.exitCode = 1;
+/** Meta's rate limits: the post waits for the next run, which is not a failure. */
+const RATE_LIMITED = /request limit|rate limit|too many calls/i;
+if (failed.some((f) => !RATE_LIMITED.test(f.error))) process.exitCode = 1;
 
 /**
  * The story images as a Reel too (publish/reel.ts): Reels reach people who do not follow yet. Only for the

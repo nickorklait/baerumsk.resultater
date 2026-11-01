@@ -34,6 +34,9 @@ try {
   for (const { key, entry } of targets) {
     const mediaId = entry.mediaIds[0] ?? (entry.permalink ? byPermalink.get(entry.permalink.replace(/\/$/, '')) : undefined);
     if (!mediaId) continue;
+    // Read at most every 6 hours (the shared rate limit).
+    const seen = insights.media[key]?.fetchedAt;
+    if (seen && Date.now() - Date.parse(seen) < 6 * 3.6e6) continue;
     try {
       const values = await ig.mediaInsights(mediaId, entry.kind);
       insights.media[key] = { mediaId, kind: entry.kind, fetchedAt: new Date().toISOString(), ...values };

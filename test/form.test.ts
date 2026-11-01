@@ -36,8 +36,8 @@ test('insights helpers: follower trend, interactions, which publications to read
   const pub = {
     a: { publishedAt: '2026-10-22T20:00:00Z', kind: 'story' as const, mediaIds: ['1'], permalink: null },
     b: { publishedAt: '2026-10-21T08:00:00Z', kind: 'story' as const, mediaIds: ['2'], permalink: null }, // story older than 24 h
-    c: { publishedAt: '2026-10-01T08:00:00Z', kind: 'feed' as const, mediaIds: ['3'], permalink: null },
-    d: { publishedAt: '2026-09-01T08:00:00Z', kind: 'feed' as const, mediaIds: ['4'], permalink: null }, // older than 30 days
+    c: { publishedAt: '2026-10-15T08:00:00Z', kind: 'feed' as const, mediaIds: ['3'], permalink: null },
+    d: { publishedAt: '2026-10-01T08:00:00Z', kind: 'feed' as const, mediaIds: ['4'], permalink: null }, // older than 14 days
   };
   assert.deepEqual(insightTargets(pub, now).map((t) => t.key), ['a', 'c']);
 });

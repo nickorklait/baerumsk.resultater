@@ -45,11 +45,12 @@ export function followerTrend(i: Insights, days = 7): { now: number | null; delt
 }
 
 /**
- * Which publications to (re)read now: feed posts from the last 30 days (numbers keep growing for a while)
- * and stories from the last 24 hours (Instagram drops story insights after that).
+ * Which publications to (re)read now: feed posts from the last 14 days (numbers keep growing for a while)
+ * and stories from the last 24 hours (Instagram drops story insights after that). Each read counts against the
+ * Meta app's shared rate limit.
  */
 export function insightTargets(published: Record<string, PublishedEntry>, now = Date.now()): { key: string; entry: PublishedEntry }[] {
   return Object.entries(published)
-    .filter(([, e]) => now - Date.parse(e.publishedAt) < (e.kind === 'story' ? 24 * 3.6e6 : 30 * 864e5))
+    .filter(([, e]) => now - Date.parse(e.publishedAt) < (e.kind === 'story' ? 24 * 3.6e6 : 14 * 864e5))
     .map(([key, entry]) => ({ key, entry }));
 }

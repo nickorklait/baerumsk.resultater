@@ -83,14 +83,16 @@ export class InstagramClient {
   }
 
   async waitUntilReady(containerId: string): Promise<void> {
-    const interval = this.opts.pollIntervalMs ?? 5000;
+    // Every check counts against the Meta app's shared rate limit: often at first (images are ready at once),
+    // then seldom (a video takes a minute or two).
+    const waits = this.opts.pollIntervalMs ? [this.opts.pollIntervalMs] : [2000, 3000, 5000, 10_000, 15_000, 20_000, 30_000];
     const deadline = Date.now() + (this.opts.pollTimeoutMs ?? 5 * 60_000);
-    for (;;) {
+    for (let i = 0; ; i++) {
       const s = await this.status(containerId);
       if (s === 'FINISHED') return;
       if (s === 'ERROR' || s === 'EXPIRED') throw new InstagramError(`Container ${containerId} ${s}`, 0);
       if (Date.now() > deadline) throw new InstagramError(`Container ${containerId} not ready (${s})`, 0);
-      await new Promise((r) => setTimeout(r, interval));
+      await new Promise((r) => setTimeout(r, waits[Math.min(i, waits.length - 1)]));
     }
   }
 
