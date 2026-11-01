@@ -89,7 +89,8 @@ export class CalendarFeedAdapter implements MatchDataAdapter {
 }
 
 const fetchStateFile = () => path.join(paths.snapshots, '..', 'fetch-state.json');
-const readFetchState = (): Record<string, string> => (fs.existsSync(fetchStateFile()) ? JSON.parse(fs.readFileSync(fetchStateFile(), 'utf8')) : {});
+/** When each feed was last fetched successfully (ISO time per source). */
+export const readFetchState = (): Record<string, string> => (fs.existsSync(fetchStateFile()) ? JSON.parse(fs.readFileSync(fetchStateFile(), 'utf8')) : {});
 const writeFetchState = (s: Record<string, string>) => fs.writeFileSync(fetchStateFile(), JSON.stringify(s, null, 2));
 
 /** Feed text without the parts that change on every request. */
