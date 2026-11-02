@@ -35,6 +35,34 @@
       "reach": 0,
       "replies": 0,
       "shares": 0
+    },
+    "2026-11-01/resultater-feed": {
+      "mediaId": "17892587052456561",
+      "kind": "feed",
+      "fetchedAt": "2026-11-02T10:42:40.036Z",
+      "reach": 0,
+      "likes": 0,
+      "comments": 0,
+      "saved": 0,
+      "shares": 0
+    },
+    "2026-11-01/resultater-story": {
+      "mediaId": "18107243228306015",
+      "kind": "story",
+      "fetchedAt": "2026-11-02T10:42:40.402Z",
+      "reach": 0,
+      "replies": 0,
+      "shares": 0
+    },
+    "2026-11-01/resultater-reel": {
+      "mediaId": "18453892780122323",
+      "kind": "reel",
+      "fetchedAt": "2026-11-02T10:42:40.783Z",
+      "reach": 0,
+      "likes": 0,
+      "comments": 0,
+      "saved": 0,
+      "shares": 0
     }
   },
   "profile": {
@@ -44,8 +72,8 @@
     "website": false,
     "follows": 6,
     "followers": 6,
-    "media": 1,
-    "checkedAt": "2026-11-02T08:41:20.866Z"
+    "media": 2,
+    "checkedAt": "2026-11-02T10:42:39.607Z"
   },
-  "updatedAt": "2026-11-02T08:41:21.215Z"
+  "updatedAt": "2026-11-02T10:42:40.783Z"
 }

@@ -38,5 +38,65 @@
     ],
     "images": 1,
     "thumb": "2026-11-01/resultat-menn-senior-a-2026-10-31_story.png"
+  },
+  "2026-11-01/resultater-feed": {
+    "publishedAt": "2026-11-02T10:41:41.934Z",
+    "kind": "feed",
+    "mediaIds": [
+      "17892587052456561"
+    ],
+    "permalink": "https://www.instagram.com/p/DfPHcSAlgCn/",
+    "label": "Helgens resultater",
+    "sponsors": [
+      "plass-hovedsponsor",
+      "plass-partner-1",
+      "plass-partner-2",
+      "plass-partner-3"
+    ],
+    "teams": [
+      "Bærum Menn Senior A"
+    ],
+    "images": 1,
+    "thumb": "2026-11-01/resultater-klubb_feed.png"
+  },
+  "2026-11-01/resultater-story": {
+    "publishedAt": "2026-11-02T10:41:49.315Z",
+    "kind": "story",
+    "mediaIds": [
+      "18107243228306015"
+    ],
+    "permalink": null,
+    "label": "Helgens resultater (story)",
+    "sponsors": [
+      "plass-hovedsponsor",
+      "plass-partner-1",
+      "plass-partner-2",
+      "plass-partner-3"
+    ],
+    "teams": [
+      "Bærum Menn Senior A"
+    ],
+    "images": 1,
+    "thumb": "2026-11-01/resultater-klubb_story.png"
+  },
+  "2026-11-01/resultater-reel": {
+    "publishedAt": "2026-11-02T10:42:38.535Z",
+    "kind": "reel",
+    "mediaIds": [
+      "18453892780122323"
+    ],
+    "permalink": "https://www.instagram.com/reel/DfPHgVBDKQR/",
+    "label": "Helgens resultater (story) (reel)",
+    "sponsors": [
+      "plass-hovedsponsor",
+      "plass-partner-1",
+      "plass-partner-2",
+      "plass-partner-3"
+    ],
+    "teams": [
+      "Bærum Menn Senior A"
+    ],
+    "images": 1,
+    "thumb": "2026-11-01/resultater-klubb_story.png"
   }
 }
