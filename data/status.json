@@ -1,16 +1,16 @@
 {
   "fetch": {
-    "at": "2026-11-02T10:41:18.754Z",
+    "at": "2026-11-02T12:41:15.731Z",
     "reports": [
       {
         "source": "club-89",
-        "status": "cached",
-        "detail": "last fetch 2.0 h ago"
+        "status": "fetched",
+        "detail": "unchanged since the last snapshot"
       }
     ]
   },
   "generate": {
-    "at": "2026-11-02T10:41:23.871Z",
+    "at": "2026-11-02T12:41:21.847Z",
     "weeks": [
       {
         "key": "2026-10-25",
@@ -25,13 +25,9 @@
     ]
   },
   "publish": {
-    "at": "2026-11-02T10:42:38.536Z",
+    "at": "2026-11-02T12:41:22.326Z",
     "paused": false,
-    "published": [
-      "2026-11-01/resultater-feed",
-      "2026-11-01/resultater-story",
-      "2026-11-01/resultater-reel"
-    ],
+    "published": [],
     "failed": [],
     "waiting": 0
   }
