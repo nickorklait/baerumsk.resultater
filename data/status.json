@@ -1,16 +1,16 @@
 {
   "fetch": {
-    "at": "2026-11-03T10:41:14.032Z",
+    "at": "2026-11-03T12:41:15.385Z",
     "reports": [
       {
         "source": "club-89",
-        "status": "cached",
-        "detail": "last fetch 2.0 h ago"
+        "status": "fetched",
+        "detail": "unchanged since the last snapshot"
       }
     ]
   },
   "generate": {
-    "at": "2026-11-03T10:41:18.869Z",
+    "at": "2026-11-03T12:41:20.372Z",
     "weeks": [
       {
         "key": "2026-10-25",
@@ -25,7 +25,7 @@
     ]
   },
   "publish": {
-    "at": "2026-11-03T10:41:19.240Z",
+    "at": "2026-11-03T12:41:20.889Z",
     "paused": false,
     "published": [],
     "failed": [],
