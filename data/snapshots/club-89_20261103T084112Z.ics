@@ -1,0 +1,172 @@
+BEGIN:VCALENDAR
+PRODID:-//github.com/ical-org/ical.net//NONSGML ical.net 4.0//EN
+VERSION:2.0
+X-WR-CALNAME:Alle kamper i Bærum 1
+BEGIN:VEVENT
+DESCRIPTION:G12 år 9er 1. div. avd. 01 (runde 15)\n\nBærum G12 1 - Stabæk 
+  G12 2\nAJ Arena 9er A onsdag 04.11.26 18:10\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261104T192900
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20261104T181000
+LOCATION:AJ Arena 9er A
+SEQUENCE:0
+SUMMARY:Bærum G12 1 - Stabæk  G12 2 -
+UID:a0e21c2b-7dd7-4f97-b219-6e20bb07157f
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 1)\n\nGrüner Allianse J10  - Bæru
+ m J10 1\nVahl Flerbrukshall lørdag 07.11.26 09:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261107T095000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20261107T093000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Grüner Allianse J10  - Bærum J10 1 -
+UID:5d11ed3e-fb3c-45d2-b0a6-bb508014fa64
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 2)\n\nStabæk  J10 1 - Bærum J10 1
+ \nVahl Flerbrukshall lørdag 07.11.26 10:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261107T105000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20261107T103000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Stabæk  J10 1 - Bærum J10 1 -
+UID:3069532b-41e2-4ec6-a592-cdf41d8d38c3
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 4)\n\nReady J10 Blå - Bærum J10 1
+ \nVahl Flerbrukshall lørdag 21.11.26 16:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261121T162000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20261121T160000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Ready J10 Blå - Bærum J10 1 -
+UID:93d10ef5-b25b-47e4-bd35-50a830ba1ad0
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 3)\n\nFossum J10 1 - Bærum J10 1\
+ nVahl Flerbrukshall lørdag 21.11.26 17:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261121T172000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20261121T170000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Fossum J10 1 - Bærum J10 1 -
+UID:e0203543-751e-4ad4-bef4-b34f921951b8
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 5)\n\nBærum J10 1 - Monolitten Id
+ rettslag J10 Blå\nVahl Flerbrukshall lørdag 05.12.26 09:30\n\nwww.fotball
+ .no
+DTEND;TZID=Europe/Oslo:20261205T095000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20261205T093000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Monolitten Idrettslag J10 Blå -
+UID:2d2ac1be-93b2-4dbe-946f-0504fd23750b
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 6)\n\nBærum J10 1 - Vålerenga J10
+  \nVahl Flerbrukshall lørdag 05.12.26 10:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20261205T102000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20261205T100000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Vålerenga J10  -
+UID:49f82079-cc73-4aca-bbcd-980b96f4dd41
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 7)\n\nJutul J10 1 - Bærum J10 1\n
+ Vahl Flerbrukshall lørdag 09.01.27 13:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270109T135000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20270109T133000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Jutul J10 1 - Bærum J10 1 -
+UID:4c958e9b-df5d-4d8c-a69e-1e1dae360fdd
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 8)\n\nGrüner Allianse J10  - Bæru
+ m J10 1\nVahl Flerbrukshall lørdag 09.01.27 14:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270109T145000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20270109T143000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Grüner Allianse J10  - Bærum J10 1 -
+UID:ffee10c9-7c7a-4cb1-b5cd-118683dfce16
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 9)\n\nStabæk  J10 1 - Bærum J10 1
+ \nVahl Flerbrukshall lørdag 16.01.27 09:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270116T095000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20270116T093000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Stabæk  J10 1 - Bærum J10 1 -
+UID:b1558dae-1026-4e46-ab07-a73edab952cf
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 10)\n\nFossum J10 1 - Bærum J10 1
+ \nVahl Flerbrukshall lørdag 16.01.27 10:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270116T105000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20270116T103000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Fossum J10 1 - Bærum J10 1 -
+UID:f8f61ec7-8dcb-47f3-964f-dd5fbd47420b
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 11)\n\nBærum J10 1 - Ready J10 Bl
+ å\nVahl Flerbrukshall lørdag 06.02.27 15:00\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270206T152000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20270206T150000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Ready J10 Blå -
+UID:d51a059a-b459-4d11-8623-e8ea1ea6f049
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 12)\n\nBærum J10 1 - Monolitten I
+ drettslag J10 Blå\nVahl Flerbrukshall lørdag 06.02.27 16:00\n\nwww.fotbal
+ l.no
+DTEND;TZID=Europe/Oslo:20270206T162000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20270206T160000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Monolitten Idrettslag J10 Blå -
+UID:9d93b504-8a23-42a1-bcfc-9167148c7b71
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 13)\n\nBærum J10 1 - Vålerenga J1
+ 0 \nVahl Flerbrukshall lørdag 06.03.27 09:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270306T095000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20270306T093000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Vålerenga J10  -
+UID:4a29a58e-b577-4f50-89c3-e3945aff0a4a
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Futsal J10 år avd. 03 (runde 14)\n\nBærum J10 1 - Jutul J10 1\
+ nVahl Flerbrukshall lørdag 06.03.27 10:30\n\nwww.fotball.no
+DTEND;TZID=Europe/Oslo:20270306T105000
+DTSTAMP:20261103T084112Z
+DTSTART;TZID=Europe/Oslo:20270306T103000
+LOCATION:Vahl Flerbrukshall
+SEQUENCE:0
+SUMMARY:Bærum J10 1 - Jutul J10 1 -
+UID:ae16be4f-9a61-4d5f-ba17-3dcd0c2679ef
+END:VEVENT
+END:VCALENDAR
