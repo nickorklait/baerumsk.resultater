@@ -45,3 +45,19 @@ test('the video: 9:16 MP4 from the story images, moving and cross-faded, a short
   assert.equal(head, 'ftyp');
   fs.rmSync(dir, { recursive: true, force: true });
 });
+
+test('publishing is retried when Instagram says the media is not available yet, and other errors are not', async () => {
+  let tries = 0;
+  const fetchFn = (async (input: string | URL | Request) => {
+    const p = new URL(String(input)).pathname;
+    const json = (body: unknown, status = 200) => new Response(JSON.stringify(body), { status });
+    if (p.endsWith('/media_publish')) return ++tries < 3 ? json({ error: { message: 'Media ID is not available', code: 9007 } }, 400) : json({ id: 'm1' });
+    return json({});
+  }) as typeof fetch;
+  const ig = new InstagramClient({ userId: '1789', token: 'tok', apiVersion: 'v26.0', fetch: fetchFn, retryDelaysMs: [1, 1, 1] });
+  assert.equal(await ig.publish('c1'), 'm1');
+  assert.equal(tries, 3);
+  const refuse = (async () => new Response(JSON.stringify({ error: { message: 'Invalid parameter', code: 100 } }), { status: 400 })) as typeof fetch;
+  const strict = new InstagramClient({ userId: '1789', token: 'tok', apiVersion: 'v26.0', fetch: refuse, retryDelaysMs: [1, 1, 1] });
+  await assert.rejects(strict.publish('c1'), /Invalid parameter/);
+});

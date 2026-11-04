@@ -24,6 +24,9 @@ export interface InstagramClientOptions {
 /** Instagram's answers when it could not download the image from our URL. */
 const IMAGE_NOT_FETCHED = /only photo or video|media download|could not be (?:fetched|downloaded)|failed to (?:fetch|download)/i;
 
+/** Instagram's answer when a container it called FINISHED cannot be published quite yet; a little later it can. */
+const NOT_READY = /media id is not available|not ready to be published/i;
+
 export class InstagramClient {
   private readonly base: string;
   private readonly fetch: FetchFn;
@@ -96,9 +99,19 @@ export class InstagramClient {
     }
   }
 
+  /** Publishes a finished container, retried when Instagram says the media is not available yet (see NOT_READY). */
   async publish(containerId: string): Promise<string> {
-    const { id } = await this.call<{ id: string }>('POST', `${this.opts.userId}/media_publish`, { creation_id: containerId });
-    return id;
+    const waits = this.opts.retryDelaysMs ?? [15_000, 30_000, 45_000];
+    for (let attempt = 0; ; attempt++) {
+      try {
+        const { id } = await this.call<{ id: string }>('POST', `${this.opts.userId}/media_publish`, { creation_id: containerId });
+        return id;
+      } catch (e) {
+        if (!(e instanceof InstagramError) || !NOT_READY.test(e.message) || attempt >= waits.length) throw e;
+        console.warn(`  Instagram could not publish yet (${e.message}); trying again in ${waits[attempt] / 1000} s.`);
+        await new Promise((r) => setTimeout(r, waits[attempt]));
+      }
+    }
   }
 
   async permalink(mediaId: string): Promise<string | null> {
