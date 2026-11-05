@@ -33,7 +33,7 @@
     "2026-11-01/resultat-menn-senior-a-2026-10-31-feed": {
       "mediaId": "18114251006323811",
       "kind": "feed",
-      "fetchedAt": "2026-11-05T00:31:32.244Z",
+      "fetchedAt": "2026-11-05T08:41:21.495Z",
       "reach": 0,
       "likes": 0,
       "comments": 0,
@@ -51,7 +51,7 @@
     "2026-11-01/resultater-feed": {
       "mediaId": "17892587052456561",
       "kind": "feed",
-      "fetchedAt": "2026-11-05T00:31:32.525Z",
+      "fetchedAt": "2026-11-05T08:41:21.831Z",
       "reach": 0,
       "likes": 0,
       "comments": 0,
@@ -69,7 +69,7 @@
     "2026-11-01/resultater-reel": {
       "mediaId": "18453892780122323",
       "kind": "reel",
-      "fetchedAt": "2026-11-05T00:31:32.699Z",
+      "fetchedAt": "2026-11-05T08:41:22.259Z",
       "reach": 13,
       "likes": 0,
       "comments": 0,
@@ -85,7 +85,7 @@
     "follows": 7,
     "followers": 6,
     "media": 2,
-    "checkedAt": "2026-11-05T00:31:31.865Z"
+    "checkedAt": "2026-11-05T08:41:21.146Z"
   },
-  "updatedAt": "2026-11-05T00:31:32.699Z"
+  "updatedAt": "2026-11-05T08:41:22.259Z"
 }
