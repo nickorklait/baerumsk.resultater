@@ -26,7 +26,7 @@
     },
     {
       "date": "2026-11-05",
-      "count": 6
+      "count": 8
     }
   ],
   "media": {
@@ -83,9 +83,9 @@
     "picture": true,
     "website": false,
     "follows": 7,
-    "followers": 6,
+    "followers": 8,
     "media": 2,
-    "checkedAt": "2026-11-05T18:41:21.833Z"
+    "checkedAt": "2026-11-05T20:41:20.295Z"
   },
-  "updatedAt": "2026-11-05T18:41:21.833Z"
+  "updatedAt": "2026-11-05T20:41:20.295Z"
 }
