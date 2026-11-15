@@ -91,7 +91,7 @@
     "2026-11-01/resultater-feed": {
       "mediaId": "17892587052456561",
       "kind": "feed",
-      "fetchedAt": "2026-11-15T08:41:21.062Z",
+      "fetchedAt": "2026-11-15T14:57:51.166Z",
       "reach": 0,
       "likes": 0,
       "comments": 0,
@@ -109,7 +109,7 @@
     "2026-11-01/resultater-reel": {
       "mediaId": "18453892780122323",
       "kind": "reel",
-      "fetchedAt": "2026-11-15T08:41:21.304Z",
+      "fetchedAt": "2026-11-15T14:57:51.397Z",
       "reach": 14,
       "likes": 0,
       "comments": 0,
@@ -125,7 +125,7 @@
     "follows": 11,
     "followers": 12,
     "media": 2,
-    "checkedAt": "2026-11-15T14:41:14.828Z"
+    "checkedAt": "2026-11-15T14:57:50.773Z"
   },
-  "updatedAt": "2026-11-15T14:41:14.828Z"
+  "updatedAt": "2026-11-15T14:57:51.397Z"
 }
