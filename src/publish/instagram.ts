@@ -51,7 +51,7 @@ export class InstagramClient {
    * take a little while to be reachable, and Instagram then answers "Only photo or video can be accepted".
    */
   async createImage(o: Parameters<InstagramClient['createImageOnce']>[0]): Promise<string> {
-    const waits = this.opts.retryDelaysMs ?? [15_000, 30_000, 45_000];
+    const waits = this.opts.retryDelaysMs ?? [15_000, 30_000, 45_000, 60_000, 90_000];
     for (let attempt = 0; ; attempt++) {
       try {
         return await this.createImageOnce(o);
@@ -101,7 +101,7 @@ export class InstagramClient {
 
   /** Publishes a finished container, retried when Instagram says the media is not available yet (see NOT_READY). */
   async publish(containerId: string): Promise<string> {
-    const waits = this.opts.retryDelaysMs ?? [15_000, 30_000, 45_000];
+    const waits = this.opts.retryDelaysMs ?? [15_000, 30_000, 45_000, 60_000, 90_000];
     for (let attempt = 0; ; attempt++) {
       try {
         const { id } = await this.call<{ id: string }>('POST', `${this.opts.userId}/media_publish`, { creation_id: containerId });

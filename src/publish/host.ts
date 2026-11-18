@@ -2,6 +2,7 @@ import { spawn, spawnSync } from 'node:child_process';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import http from 'node:http';
+import https from 'node:https';
 import type { AddressInfo } from 'node:net';
 import path from 'node:path';
 
@@ -56,49 +57,98 @@ export async function tunnelHost(dir: string, log = console.log): Promise<ImageH
   await new Promise<void>((r) => server.listen(0, '127.0.0.1', r));
   const port = (server.address() as AddressInfo).port;
 
+  const closeServer = () => new Promise((r) => server.close(r));
+  const probe = fs.readdirSync(dir).find((f) => f.endsWith('.jpg') || f.endsWith('.mp4'));
+
+  // A quick tunnel's address can take a minute or two before the rest of the internet finds it, and Instagram
+  // gives up on an image it cannot fetch (Strøm i morgen, 18 November 2026: "Only photo or video can be
+  // accepted"). So no address is handed out until the tunnel answers from outside, looked up through public
+  // DNS (the runner's own DNS may have cached "no such name"). A tunnel that never answers is replaced.
+  for (let attempt = 1; ; attempt++) {
+    const tunnel = await startTunnel(exe, port).catch(async (e) => {
+      await closeServer();
+      throw e;
+    });
+    const host: ImageHost = {
+      url: (f) => `${tunnel.base}/${secret}/${f}`,
+      close: async () => {
+        tunnel.proc.kill();
+        await closeServer();
+      },
+    };
+    if (!probe || (await reachable(host.url(probe), READY_WITHIN_MS))) {
+      log(`Images served temporarily via ${tunnel.base}`);
+      return host;
+    }
+    if (attempt >= TUNNEL_ATTEMPTS) {
+      log(`Note: ${tunnel.base} did not answer from outside within ${READY_WITHIN_MS / 1000} s (try ${attempt} of ${TUNNEL_ATTEMPTS}); continuing, Instagram checks it itself.`);
+      return host;
+    }
+    log(`Note: ${tunnel.base} did not answer within ${READY_WITHIN_MS / 1000} s; starting a new tunnel (try ${attempt + 1} of ${TUNNEL_ATTEMPTS}).`);
+    tunnel.proc.kill();
+  }
+}
+
+const TUNNEL_ATTEMPTS = 3;
+const READY_WITHIN_MS = 90_000;
+
+/** Starts cloudflared and waits until it has registered a connection; the URL is printed before that. */
+function startTunnel(exe: string, port: number): Promise<{ base: string; proc: ReturnType<typeof spawn> }> {
   // No shell: then kill() stops cloudflared itself, not just a cmd.exe wrapper.
   const proc = spawn(exe, ['tunnel', '--no-autoupdate', '--url', `http://127.0.0.1:${port}`]);
   let output = '';
-  const base = await new Promise<string>((resolve, reject) => {
+  return new Promise<{ base: string; proc: ReturnType<typeof spawn> }>((resolve, reject) => {
     const timer = setTimeout(() => reject(new Error('cloudflared did not connect within 60 s')), 60_000);
     const onData = (chunk: Buffer) => {
       output += chunk.toString();
       const url = output.match(/https:\/\/[a-z0-9-]+\.trycloudflare\.com/);
-      // The URL is printed before the tunnel works; wait until a connection is registered.
       if (url && /Registered tunnel connection/.test(output)) {
         clearTimeout(timer);
-        resolve(url[0]);
+        resolve({ base: url[0], proc });
       }
     };
-    proc.stderr.on('data', onData);
-    proc.stdout.on('data', onData);
+    proc.stderr?.on('data', onData);
+    proc.stdout?.on('data', onData);
     proc.on('exit', (code) => reject(new Error(`cloudflared exited (${code})`)));
-  }).catch(async (e) => {
+  }).catch((e) => {
     proc.kill();
-    await new Promise((r) => server.close(r));
     throw e;
   });
+}
 
-  const host: ImageHost = {
-    url: (f) => `${base}/${secret}/${f}`,
-    close: async () => {
-      proc.kill();
-      await new Promise((r) => server.close(r));
-    },
-  };
-
-  // Best-effort self-check. Meta fetches the images over its own network; if that fails the API
-  // reports an error and nothing is posted, so a failed local check (e.g. cached DNS) only warns.
-  const probe = fs.readdirSync(dir).find((f) => f.endsWith('.jpg'));
-  if (probe) {
-    await new Promise((r) => setTimeout(r, 3000));
-    let ok = false;
-    for (let i = 0; i < 5 && !ok; i++) {
-      ok = await fetch(host.url(probe), { method: 'HEAD' }).then((r) => r.ok, () => false);
-      if (!ok) await new Promise((r) => setTimeout(r, 3000));
-    }
-    if (!ok) log(`Note: could not reach ${base} from this PC (often cached DNS); continuing, Instagram checks it itself.`);
+/** The IPv4 addresses public DNS (Cloudflare's resolver, asked by IP) gives for a name; [] while it has none. */
+export async function publicAddresses(name: string, fetchFn: typeof fetch = fetch): Promise<string[]> {
+  try {
+    const r = await fetchFn(`https://1.1.1.1/dns-query?name=${encodeURIComponent(name)}&type=A`, { headers: { accept: 'application/dns-json' }, signal: AbortSignal.timeout(10_000) });
+    const j = (await r.json()) as { Answer?: { type: number; data: string }[] };
+    return (j.Answer ?? []).filter((a) => a.type === 1).map((a) => a.data);
+  } catch {
+    return [];
   }
-  log(`Images served temporarily via ${base}`);
-  return host;
+}
+
+/** One HEAD request to `url`, sent to `ip` (so the local DNS cache plays no part). */
+function headVia(url: string, ip: string): Promise<boolean> {
+  const u = new URL(url);
+  return new Promise((resolve) => {
+    const req = https.request({ host: ip, servername: u.hostname, path: u.pathname, method: 'HEAD', headers: { Host: u.hostname }, timeout: 10_000 }, (res) => {
+      res.resume();
+      resolve(res.statusCode === 200);
+    });
+    req.on('timeout', () => req.destroy());
+    req.on('error', () => resolve(false));
+    req.end();
+  });
+}
+
+/** True once `url` answers 200 from outside, checked every 5 s for up to `withinMs`. */
+async function reachable(url: string, withinMs: number): Promise<boolean> {
+  const until = Date.now() + withinMs;
+  const name = new URL(url).hostname;
+  while (Date.now() < until) {
+    const ips = await publicAddresses(name);
+    for (const ip of ips) if (await headVia(url, ip)) return true;
+    await new Promise((r) => setTimeout(r, 5000));
+  }
+  return false;
 }
