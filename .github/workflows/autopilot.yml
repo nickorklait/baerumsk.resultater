@@ -168,7 +168,8 @@ jobs:
             echo "Dashboard buttons not configured yet (secrets ACCESS_AUD and DASHBOARD_GITHUB_TOKEN)."
           fi
           deploy() { npx --yes wrangler@4 pages deploy ../output --project-name="$PAGES_PROJECT" --branch=main --commit-dirty=true; }
-          deploy || { create; deploy; }
+          # Cloudflare sometimes answers 503 for a minute (konkurs-norge, 13 Nov 2026): two more tries before failing.
+          deploy || { create; deploy; } || { echo "Pages deploy failed; trying again in 30 s."; sleep 30; deploy; } || { echo "Pages deploy failed; last try in 60 s."; sleep 60; deploy; }
 
       - name: Remember the deploy
         if: always() && steps.deploy.outcome == 'success' && steps.deployed.outputs.cache-hit != 'true'
