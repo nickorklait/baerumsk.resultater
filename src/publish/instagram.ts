@@ -2,9 +2,19 @@
 // Docs: https://developers.facebook.com/docs/instagram-platform/content-publishing
 
 export class InstagramError extends Error {
-  constructor(message: string, readonly status: number, readonly code?: number) {
+  constructor(message: string, readonly status: number, readonly code?: number, readonly transient = false) {
     super(message);
   }
+}
+
+/**
+ * Meta's own hiccups – "Timeout", "An unexpected error has occurred. Please retry your request later.", code 1 or 2,
+ * is_transient, a 5xx or a dropped connection: the same request a little later works (a story on Strøm i morgen,
+ * 23 Nov 2026). Rate limits are not counted here; those posts wait for the next run.
+ */
+export function isTransient(e: unknown): boolean {
+  if (!(e instanceof InstagramError) || /request limit|rate limit|too many calls/i.test(e.message)) return false;
+  return e.transient || e.code === 1 || e.code === 2 || e.status >= 500 || /^timeout$|timed out|unexpected error|temporarily unavailable|please retry/i.test(e.message);
 }
 
 type FetchFn = typeof fetch;
@@ -40,9 +50,11 @@ export class InstagramClient {
     const body = new URLSearchParams();
     for (const [k, v] of Object.entries({ ...params, access_token: this.opts.token })) if (v !== undefined) body.set(k, v);
     const url = method === 'GET' ? `${this.base}/${path}?${body}` : `${this.base}/${path}`;
-    const res = await this.fetch(url, method === 'GET' ? {} : { method, body, headers: { 'Content-Type': 'application/x-www-form-urlencoded' } });
-    const json = (await res.json().catch(() => ({}))) as { error?: { message?: string; code?: number } } & T;
-    if (!res.ok || json.error) throw new InstagramError(json.error?.message ?? `HTTP ${res.status}`, res.status, json.error?.code);
+    const res = await this.fetch(url, method === 'GET' ? {} : { method, body, headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }).catch((e: Error) => {
+      throw new InstagramError(`No answer from Instagram (${e.message})`, 0, undefined, true);
+    });
+    const json = (await res.json().catch(() => ({}))) as { error?: { message?: string; code?: number; is_transient?: boolean } } & T;
+    if (!res.ok || json.error) throw new InstagramError(json.error?.message ?? `HTTP ${res.status}`, res.status, json.error?.code, json.error?.is_transient === true);
     return json;
   }
 
@@ -56,8 +68,9 @@ export class InstagramClient {
       try {
         return await this.createImageOnce(o);
       } catch (e) {
-        if (!(e instanceof InstagramError) || !IMAGE_NOT_FETCHED.test(e.message) || attempt >= waits.length) throw e;
-        console.warn(`  Instagram could not fetch the image yet (${e.message}); trying again in ${waits[attempt] / 1000} s.`);
+        const notFetched = e instanceof InstagramError && IMAGE_NOT_FETCHED.test(e.message);
+        if (!(notFetched || isTransient(e)) || attempt >= waits.length) throw e;
+        console.warn(`  Instagram could not take the image yet (${(e as Error).message}); trying again in ${waits[attempt] / 1000} s.`);
         await new Promise((r) => setTimeout(r, waits[attempt]));
       }
     }
@@ -91,7 +104,13 @@ export class InstagramClient {
     const waits = this.opts.pollIntervalMs ? [this.opts.pollIntervalMs] : [2000, 3000, 5000, 10_000, 15_000, 20_000, 30_000];
     const deadline = Date.now() + (this.opts.pollTimeoutMs ?? 5 * 60_000);
     for (let i = 0; ; i++) {
-      const s = await this.status(containerId);
+      let s: string;
+      try {
+        s = await this.status(containerId);
+      } catch (e) {
+        if (!isTransient(e) || Date.now() > deadline) throw e;
+        s = 'IN_PROGRESS'; // a hiccup while asking: ask again
+      }
       if (s === 'FINISHED') return;
       if (s === 'ERROR' || s === 'EXPIRED') throw new InstagramError(`Container ${containerId} ${s}`, 0);
       if (Date.now() > deadline) throw new InstagramError(`Container ${containerId} not ready (${s})`, 0);
@@ -107,8 +126,15 @@ export class InstagramClient {
         const { id } = await this.call<{ id: string }>('POST', `${this.opts.userId}/media_publish`, { creation_id: containerId });
         return id;
       } catch (e) {
-        if (!(e instanceof InstagramError) || !NOT_READY.test(e.message) || attempt >= waits.length) throw e;
-        console.warn(`  Instagram could not publish yet (${e.message}); trying again in ${waits[attempt] / 1000} s.`);
+        const notReady = e instanceof InstagramError && NOT_READY.test(e.message);
+        if (!(notReady || isTransient(e)) || attempt >= waits.length) throw e;
+        // A timeout can hide a publish that went through. Then it must not go out twice: the container id stands
+        // in for the media id, which Instagram did not send (permalink and insights skip it).
+        if (!notReady && (await this.status(containerId).catch(() => '')) === 'PUBLISHED') {
+          console.warn(`  Instagram answered "${(e as Error).message}", but the post went out.`);
+          return containerId;
+        }
+        console.warn(`  Instagram could not publish yet (${(e as Error).message}); trying again in ${waits[attempt] / 1000} s.`);
         await new Promise((r) => setTimeout(r, waits[attempt]));
       }
     }
